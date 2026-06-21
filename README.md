@@ -28,6 +28,9 @@ For the official strategic, technical, continuity, and recovery plan, see:
 - [ARCHITECTURE_DECISIONS.md](ARCHITECTURE_DECISIONS.md)
 - [BACKUP_RESTORE_PLAN.md](BACKUP_RESTORE_PLAN.md)
 - [SECURITY_POLICY.md](SECURITY_POLICY.md)
+- [DEVELOPMENT_SETUP.md](DEVELOPMENT_SETUP.md)
+- [API_CONTRACTS.md](API_CONTRACTS.md)
+- [CHANGELOG.md](CHANGELOG.md)
 
 Important operational note: local development may run on Windows with volatile tooling, but the durable source of truth must be this Git repository plus external database/file backups. Do not store secrets, passwords, site credentials, or private environment files in this repository.
 
