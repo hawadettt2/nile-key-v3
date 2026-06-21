@@ -53,7 +53,15 @@ VM خارجية
 من PowerShell كمسؤول:
 
 ```powershell
-wsl --install -d Ubuntu
+wsl --install --no-distribution
+```
+
+أعد تشغيل Windows قبل تثبيت Ubuntu إذا ظهر أن WSL يحتاج reboot.
+
+بعد إعادة التشغيل:
+
+```powershell
+wsl --install -d Ubuntu --no-launch
 ```
 
 داخل Ubuntu:
@@ -62,6 +70,44 @@ wsl --install -d Ubuntu
 sudo apt update
 sudo apt upgrade -y
 ```
+
+### 3.1 فحص Windows host
+
+من PowerShell داخل جذر المشروع:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\check-windows-env.ps1
+```
+
+يجب أن تكون النتيجة صحيحة تقريباً:
+
+```text
+hypervisor_present = True
+virtualization_firmware_enabled = True
+wsl_status = Default Version: 2
+mariadb_127_0_0_1_3307 = True
+redis_127_0_0_1_6379 = True
+```
+
+إذا ظهر:
+
+```text
+HyperVisorPresent is False
+```
+
+أو:
+
+```text
+WSL2 is unable to start since virtualization is not enabled
+```
+
+لا تستخدم WSL1 لتشغيل Frappe. فعّل Virtualization من BIOS/UEFI ثم تأكد من تشغيل:
+
+```powershell
+wsl --install --no-distribution
+```
+
+ثم أعد تشغيل Windows.
 
 ---
 

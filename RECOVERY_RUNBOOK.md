@@ -56,17 +56,51 @@ site_config.json الحقيقي
 من PowerShell كمسؤول:
 
 ```powershell
-wsl --install -d Ubuntu
+wsl --install --no-distribution
 ```
 
-بعد التثبيت، افتح Ubuntu وأنشئ مستخدم Linux غير root، ثم حدّث الحزم:
+أعد تشغيل Windows إذا طلبت الأداة ذلك، ثم ثبّت Ubuntu:
+
+```powershell
+wsl --install -d Ubuntu --no-launch
+```
+
+بعد تثبيت Ubuntu، افتح Ubuntu وأنشئ مستخدم Linux غير root، ثم حدّث الحزم:
 
 ```bash
 sudo apt update
 sudo apt upgrade -y
 ```
 
-### 1.2 تثبيت المتطلبات الأساسية
+### 1.2 فحص Windows host
+
+من PowerShell داخل جذر المشروع:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\check-windows-env.ps1
+```
+
+لا تبدأ خطوات Frappe/Bench إذا أظهر الفحص:
+
+```text
+HyperVisorPresent is False
+```
+
+أو:
+
+```text
+WSL2 is unable to start since virtualization is not enabled
+```
+
+الحل: فعّل Virtualization من BIOS/UEFI، ثم شغّل:
+
+```powershell
+wsl --install --no-distribution
+```
+
+ثم أعد تشغيل Windows.
+
+### 1.3 تثبيت المتطلبات الأساسية
 
 ```bash
 sudo apt install -y \

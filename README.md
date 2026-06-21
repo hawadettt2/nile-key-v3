@@ -42,6 +42,12 @@ Operational helper scripts are available under `scripts/` for WSL/Linux recovery
 - `scripts/restore-site.sh`
 - `scripts/run-dev.sh`
 
+Windows host preflight:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\check-windows-env.ps1
+```
+
 - [User Guide](https://erpnext.com/docs/user)
 - [Discussion Forum](https://discuss.erpnext.com/)
 

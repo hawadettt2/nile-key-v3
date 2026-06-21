@@ -18,11 +18,13 @@
 - `DEVELOPMENT_SETUP.md` لتوثيق إعداد بيئة التطوير.
 - `API_CONTRACTS.md` لتوثيق عقود APIs المستقبلية.
 - روابط الوثائق الرسمية داخل `README.md`.
+- `scripts/check-windows-env.ps1` لفحص WSL2 والافتراضية و MariaDB/Redis على Windows host.
 
 ### Changed
 
 - تم تعزيز README ليعكس توجه المشروع كبوابة رقمية للصادرات.
-- تم توثيق قيود Deep Freeze كمخاطر تشغيلية أساسية.
+- تم تحديث `DEVELOPMENT_SETUP.md` و `RECOVERY_RUNBOOK.md` بفحص Windows/WSL قبل تشغيل Frappe.
+- تم توسيع `.gitignore` لحماية `site_config.json` و `sites/` و `logs/` و backups و `.env`.
 
 ### Security
 
