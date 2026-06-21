@@ -25,6 +25,9 @@ For the official strategic, technical, continuity, and recovery plan, see:
 
 - [MASTER_ROADMAP.md](MASTER_ROADMAP.md)
 - [RECOVERY_RUNBOOK.md](RECOVERY_RUNBOOK.md)
+- [ARCHITECTURE_DECISIONS.md](ARCHITECTURE_DECISIONS.md)
+- [BACKUP_RESTORE_PLAN.md](BACKUP_RESTORE_PLAN.md)
+- [SECURITY_POLICY.md](SECURITY_POLICY.md)
 
 Important operational note: local development may run on Windows with volatile tooling, but the durable source of truth must be this Git repository plus external database/file backups. Do not store secrets, passwords, site credentials, or private environment files in this repository.
 
