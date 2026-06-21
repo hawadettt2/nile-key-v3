@@ -17,6 +17,16 @@ Includes: Accounting, Inventory, Manufacturing, CRM, Sales, Purchase, Project Ma
 
 ERPNext is built on the [Frappe](https://github.com/frappe/frappe) Framework, a full-stack web app framework in Python & JavaScript.
 
+## Nile Key Strategic Roadmap
+
+This repository is being evolved from a legacy ERPNext v11 application into a resilient digital export gateway for Nile Key, an Egyptian LLC focused on supporting high-quality national exports.
+
+For the official strategic, technical, continuity, and recovery plan, see:
+
+- [MASTER_ROADMAP.md](MASTER_ROADMAP.md)
+
+Important operational note: local development may run on Windows with volatile tooling, but the durable source of truth must be this Git repository plus external database/file backups. Do not store secrets, passwords, site credentials, or private environment files in this repository.
+
 - [User Guide](https://erpnext.com/docs/user)
 - [Discussion Forum](https://discuss.erpnext.com/)
 
