@@ -19,11 +19,13 @@
 - `API_CONTRACTS.md` لتوثيق عقود APIs المستقبلية.
 - روابط الوثائق الرسمية داخل `README.md`.
 - `scripts/check-windows-env.ps1` لفحص WSL2 والافتراضية و MariaDB/Redis على Windows host.
+- `scripts/verify-backup.sh` للتحقق من ملفات backup قبل الاعتماد عليها.
 
 ### Changed
 
 - تم تعزيز README ليعكس توجه المشروع كبوابة رقمية للصادرات.
 - تم تحديث `DEVELOPMENT_SETUP.md` و `RECOVERY_RUNBOOK.md` بفحص Windows/WSL قبل تشغيل Frappe.
+- تم تحديث `BACKUP_RESTORE_PLAN.md` بخطوة التحقق من backup.
 - تم توسيع `.gitignore` لحماية `site_config.json` و `sites/` و `logs/` و backups و `.env`.
 
 ### Security

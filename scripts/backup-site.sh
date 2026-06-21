@@ -28,5 +28,8 @@ fi
 
 cp -n "$FRAPPE_BACKUP_DIR"/* "$BACKUP_DIR/" 2>/dev/null || true
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+"$SCRIPT_DIR/verify-backup.sh" "$BACKUP_DIR"
+
 echo "[ok] Backup files copied to: $BACKUP_DIR"
 echo "[next] Move this backup to external encrypted storage outside Deep Freeze."

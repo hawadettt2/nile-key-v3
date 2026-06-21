@@ -39,6 +39,7 @@ Operational helper scripts are available under `scripts/` for WSL/Linux recovery
 - `scripts/bootstrap-wsl.sh`
 - `scripts/check-env.sh`
 - `scripts/backup-site.sh`
+- `scripts/verify-backup.sh`
 - `scripts/restore-site.sh`
 - `scripts/run-dev.sh`
 
