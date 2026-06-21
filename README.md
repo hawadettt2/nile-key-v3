@@ -34,6 +34,14 @@ For the official strategic, technical, continuity, and recovery plan, see:
 
 Important operational note: local development may run on Windows with volatile tooling, but the durable source of truth must be this Git repository plus external database/file backups. Do not store secrets, passwords, site credentials, or private environment files in this repository.
 
+Operational helper scripts are available under `scripts/` for WSL/Linux recovery workflows:
+
+- `scripts/bootstrap-wsl.sh`
+- `scripts/check-env.sh`
+- `scripts/backup-site.sh`
+- `scripts/restore-site.sh`
+- `scripts/run-dev.sh`
+
 - [User Guide](https://erpnext.com/docs/user)
 - [Discussion Forum](https://discuss.erpnext.com/)
 
