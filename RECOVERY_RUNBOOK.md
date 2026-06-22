@@ -228,9 +228,50 @@ RECOVERY_RUNBOOK.md
 
 ---
 
-## 4. إنشاء Bench واستيراد تطبيق ERPNext الحالي
+## 4. تشغيل scripts الاستعادة
 
-### 4.1 إنشاء bench
+بعد clone المشروع داخل WSL:
+
+```bash
+cd ~/projects/nile-key-v3
+chmod +x scripts/*.sh
+```
+
+ثبّت MariaDB و Redis و wkhtmltopdf:
+
+```bash
+sudo ./scripts/install-mariadb-redis.sh
+```
+
+أنشئ bench و استورد نسخة المشروع:
+
+```bash
+BENCH_DIR=~/frappe/nile-key-bench \
+PYTHON_BIN="$HOME/.pyenv/versions/3.7.17/bin/python" \
+REPO_DIR=~/projects/nile-key-v3 \
+FORCE_REPLACE_ERPNEXT=1 \
+./scripts/init-bench.sh
+```
+
+تحقق من site بعد إنشائه أو استعادته:
+
+```bash
+SITE_NAME=nile-key.test \
+BENCH_DIR=~/frappe/nile-key-bench \
+./scripts/sanity-check.sh
+
+# عند الحاجة لتشغيل migration صراحة:
+SITE_NAME=nile-key.test \
+BENCH_DIR=~/frappe/nile-key-bench \
+RUN_MIGRATE=1 \
+./scripts/sanity-check.sh
+```
+
+---
+
+## 5. إنشاء Bench واستيراد تطبيق ERPNext الحالي
+
+### 5.1 إنشاء bench
 
 ```bash
 mkdir -p ~/frappe
@@ -244,13 +285,13 @@ bench init \
 cd ~/frappe/nile-key-bench
 ```
 
-### 4.2 جلب ERPNext الأساسي
+### 5.2 جلب ERPNext الأساسي
 
 ```bash
 bench get-app erpnext --branch version-11
 ```
 
-### 4.3 استبدال `apps/erpnext` بنسخة المشروع
+### 5.3 استبدال `apps/erpnext` بنسخة المشروع
 
 من داخل bench:
 
@@ -276,7 +317,7 @@ bench build
 
 ---
 
-## 5. إنشاء Site جديد بدون بيانات
+## 6. إنشاء Site جديد بدون بيانات
 
 ```bash
 bench new-site nile-key.test \
@@ -317,7 +358,7 @@ http://nile-key.test:8000
 
 ---
 
-## 6. استعادة Backup كامل
+## 7. استعادة Backup كامل
 
 إذا كان لديك backup من:
 
@@ -356,7 +397,7 @@ bench start
 
 ---
 
-## 7. استعادة site_config.json
+## 8. استعادة site_config.json
 
 إذا استعدت `site_config.json`، ضعه هنا:
 
@@ -374,7 +415,7 @@ bench --site nile-key.test clear-cache
 
 ---
 
-## 8. استعادة fixtures والتخصيصات
+## 9. استعادة fixtures والتخصيصات
 
 إذا كان backup يحتوي على fixtures أو تم تصديرها سابقاً:
 
@@ -396,7 +437,7 @@ apps/nile_export/nile_export/fixtures/
 
 ---
 
-## 9. التحقق من الاستعادة
+## 10. التحقق من الاستعادة
 
 ### 9.1 فحص الخدمات
 
@@ -429,7 +470,7 @@ curl -I http://nile-key.test:8000/desk
 
 ---
 
-## 10. بروتوكول backup اليومي
+## 11. بروتوكول backup اليومي
 
 بعد أي تغيير مهم في DocTypes أو Permissions أو Workflows أو Site Settings:
 
@@ -452,7 +493,7 @@ GitHub Release خاص فقط إذا كانت البيانات غير حساسة 
 
 ---
 
-## 11. بروتوكول قبل أي تجربة تحديث
+## 12. بروتوكول قبل أي تجربة تحديث
 
 قبل أي upgrade أو migration خطير:
 
@@ -467,7 +508,7 @@ bench --site nile-key.test export-fixtures
 
 ---
 
-## 12. خطة التحديث المستقبلية
+## 13. خطة التحديث المستقبلية
 
 المشروع الحالي ERPNext `11.1.49`.
 
@@ -497,7 +538,7 @@ rollback plan
 
 ---
 
-## 13. استعادة مختصرة جداً عند الطوارئ
+## 14. استعادة مختصرة جداً عند الطوارئ
 
 ```bash
 # 1. clone
@@ -522,7 +563,7 @@ sudo apt install -y git curl wget build-essential mariadb-server redis-server wk
 
 ---
 
-## 14. قائمة تحقق نهائية
+## 15. قائمة تحقق نهائية
 
 ```text
 [ ] GitHub clone ناجح
@@ -545,7 +586,7 @@ sudo apt install -y git curl wget build-essential mariadb-server redis-server wk
 
 ---
 
-## 15. ملاحظات تشغيلية مهمة
+## 16. ملاحظات تشغيلية مهمة
 
 - لا تعتمد على Windows local كمصدر وحيد.
 - لا تعتمد على MariaDB/Redis المحليتين إن لم تكونا داخل WSL/Docker/Cloud.

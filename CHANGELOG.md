@@ -20,12 +20,14 @@
 - روابط الوثائق الرسمية داخل `README.md`.
 - `scripts/check-windows-env.ps1` لفحص WSL2 والافتراضية و MariaDB/Redis على Windows host.
 - `scripts/verify-backup.sh` للتحقق من ملفات backup قبل الاعتماد عليها.
+- `scripts/install-mariadb-redis.sh` و `scripts/init-bench.sh` و `scripts/sanity-check.sh` لاستكمال workflow استعادة bench.
 
 ### Changed
 
 - تم تعزيز README ليعكس توجه المشروع كبوابة رقمية للصادرات.
 - تم تحديث `DEVELOPMENT_SETUP.md` و `RECOVERY_RUNBOOK.md` بفحص Windows/WSL قبل تشغيل Frappe.
 - تم تحديث `BACKUP_RESTORE_PLAN.md` بخطوة التحقق من backup.
+- تم تحديث `MASTER_ROADMAP.md` بقائمة scripts التشغيلية الكاملة.
 - تم توسيع `.gitignore` لحماية `site_config.json` و `sites/` و `logs/` و backups و `.env`.
 
 ### Security

@@ -266,10 +266,13 @@ scripts/
 
 ```text
 scripts/bootstrap-wsl.sh
+scripts/check-windows-env.ps1
+scripts/check-env.sh
 scripts/install-mariadb-redis.sh
 scripts/init-bench.sh
 scripts/restore-site.sh
 scripts/backup-site.sh
+scripts/verify-backup.sh
 scripts/run-dev.sh
 scripts/sanity-check.sh
 ```

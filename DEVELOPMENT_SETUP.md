@@ -276,7 +276,36 @@ bench --site nile-key.test doctor
 
 ---
 
-## 14. التحقق من البيئة
+## 15. scripts التشغيلية
+
+استخدم السكريبتات داخل WSL/Ubuntu:
+
+```bash
+sudo ./scripts/install-mariadb-redis.sh
+BENCH_DIR=~/frappe/nile-key-bench \
+PYTHON_BIN="$HOME/.pyenv/versions/3.7.17/bin/python" \
+REPO_DIR=~/projects/nile-key-v3 \
+FORCE_REPLACE_ERPNEXT=1 \
+./scripts/init-bench.sh
+```
+
+للتحقق من حالة bench/site:
+
+```bash
+SITE_NAME=nile-key.test \
+BENCH_DIR=~/frappe/nile-key-bench \
+./scripts/sanity-check.sh
+
+# بعد التأكد، وعند الحاجة لتشغيل migration:
+SITE_NAME=nile-key.test \
+BENCH_DIR=~/frappe/nile-key-bench \
+RUN_MIGRATE=1 \
+./scripts/sanity-check.sh
+```
+
+---
+
+## 16. التحقق من البيئة
 
 ```bash
 python --version

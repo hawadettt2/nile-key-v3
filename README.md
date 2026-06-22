@@ -38,10 +38,13 @@ Operational helper scripts are available under `scripts/` for WSL/Linux recovery
 
 - `scripts/bootstrap-wsl.sh`
 - `scripts/check-env.sh`
+- `scripts/install-mariadb-redis.sh`
+- `scripts/init-bench.sh`
 - `scripts/backup-site.sh`
 - `scripts/verify-backup.sh`
 - `scripts/restore-site.sh`
 - `scripts/run-dev.sh`
+- `scripts/sanity-check.sh`
 
 Windows host preflight:
 
