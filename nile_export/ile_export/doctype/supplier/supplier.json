@@ -1,0 +1,93 @@
+{
+    "doctype": "DocType",
+    "name": "Supplier",
+    "module": "Nile Export",
+    "custom": 1,
+    "engine": "InnoDB",
+    "fields": [
+        {
+            "label": "Supplier Name",
+            "fieldname": "supplier_name",
+            "fieldtype": "Data",
+            "reqd": 1
+        },
+        {
+            "label": "Company",
+            "fieldname": "company",
+            "fieldtype": "Link",
+            "options": "Company"
+        },
+        {
+            "label": "Email",
+            "fieldname": "email",
+            "fieldtype": "Data",
+            "options": "Email"
+        },
+        {
+            "label": "Phone",
+            "fieldname": "phone",
+            "fieldtype": "Data"
+        },
+        {
+            "label": "Address",
+            "fieldname": "address",
+            "fieldtype": "Small Text"
+        },
+        {
+            "label": "Product Categories",
+            "fieldname": "product_categories",
+            "fieldtype": "Small Text"
+        },
+        {
+            "label": "Certification Status",
+            "fieldname": "certification_status",
+            "fieldtype": "Select",
+            "options": "Pending\nCertified\nExpired",
+            "default": "Pending"
+        },
+        {
+            "label": "Competitor Analysis",
+            "fieldname": "competitor_analysis",
+            "fieldtype": "Section Break"
+        },
+        {
+            "label": "Market Position",
+            "fieldname": "market_position",
+            "fieldtype": "Small Text",
+            "label": "Market Position (Local/Regional/Global)"
+        },
+        {
+            "label": "Competitive Pricing",
+            "fieldname": "competitive_pricing",
+            "fieldtype": "Currency"
+        },
+        {
+            "label": "Price Comparison Notes",
+            "fieldname": "price_comparison_notes",
+            "fieldtype": "Text",
+            "label": "Price Comparison Notes"
+        },
+        {
+            "label": "Sales Channels",
+            "fieldname": "sales_channels",
+            "fieldtype": "Small Text",
+            "label": "Sales Channels (Retail/Wholesale/Direct)"
+        },
+        {
+            "label": "Customer Policy",
+            "fieldname": "customer_policy",
+            "fieldtype": "Text",
+            "label": "Customer Policy (MOQ, Credit Terms, Returns)"
+        },
+        {
+            "label": "Quality Standards",
+            "fieldname": "quality_standards",
+            "fieldtype": "Text"
+        },
+        {
+            "label": "Certification Details",
+            "fieldname": "certification_details",
+            "fieldtype": "Text"
+        }
+    ]
+}

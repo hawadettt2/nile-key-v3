@@ -1,0 +1,14 @@
+{
+    "app": {
+        "name": "nile_export",
+        "title": "Nile Export",
+        "version": "0.0.1",
+        "description": "Digital Export Gateway for Nile Key",
+        "readme": "README.md",
+        "product_feature": "Export Management",
+        "license": "MIT",
+        "authors": ["Nile Key Team"],
+        "email": "info@nilekey.com",
+        "repository": "https://github.com/hawadettt2/nile-key-v3"
+    }
+}

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nile_export"
+version = "0.0.1"
+description = "Digital Export Gateway for Nile Key"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Nile Key Team", email = "info@nilekey.com"}
+]
+requires-python = ">=3.10"
+
+[project.entry-points."frappe.apps"]
+nile_export = "nile_export"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nile_export*"]

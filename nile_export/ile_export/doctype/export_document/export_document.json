@@ -1,0 +1,42 @@
+{
+    "doctype": "DocType",
+    "name": "Export Document",
+    "module": "Nile Export",
+    "custom": 1,
+    "engine": "InnoDB",
+    "fields": [
+        {
+            "label": "Document Type",
+            "fieldname": "document_type",
+            "fieldtype": "Select",
+            "options": "Commercial Invoice\nPacking List\nBill of Lading\nCertificate of Origin\nExport License\nPhytosanitary Certificate\nCertificate of Quality",
+            "reqd": 1
+        },
+        {
+            "label": "Document Number",
+            "fieldname": "document_number",
+            "fieldtype": "Data",
+            "reqd": 1
+        },
+        {
+            "label": "Issue Date",
+            "fieldname": "issue_date",
+            "fieldtype": "Date"
+        },
+        {
+            "label": "Expiry Date",
+            "fieldname": "expiry_date",
+            "fieldtype": "Date"
+        },
+        {
+            "label": "File",
+            "fieldname": "file",
+            "fieldtype": "Attach"
+        },
+        {
+            "label": "Remarks",
+            "fieldname": "remarks",
+            "fieldtype": "Text"
+        }
+    ]
+}

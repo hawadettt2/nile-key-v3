@@ -1,0 +1,36 @@
+{
+    "doctype": "DocType",
+    "name": "Shipping Line",
+    "module": "Nile Export",
+    "custom": 1,
+    "engine": "InnoDB",
+    "fields": [
+        {
+            "label": "Shipping Line Name",
+            "fieldname": "shipping_line_name",
+            "fieldtype": "Data",
+            "reqd": 1
+        },
+        {
+            "label": "Carrier Code",
+            "fieldname": "carrier_code",
+            "fieldtype": "Data"
+        },
+        {
+            "label": "Contact Email",
+            "fieldname": "contact_email",
+            "fieldtype": "Data",
+            "options": "Email"
+        },
+        {
+            "label": "Phone",
+            "fieldname": "phone",
+            "fieldtype": "Data"
+        },
+        {
+            "label": "Address",
+            "fieldname": "address",
+            "fieldtype": "Small Text"
+        }
+    ]
+}
