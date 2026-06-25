@@ -1,6 +1,26 @@
 [
     {
         "doctype": "Workflow",
+        "name": "Export Shipment Workflow",
+        "document_type": "Export Shipment",
+        "workflow_state_field": "status",
+        "states": [
+            {"state": "Draft", "doc_status": 0, "allow_edit": ["Nile Export Owner", "Nile Export Admin", "Export Director", "Operations Manager"]},
+            {"state": "Pending", "doc_status": 0, "allow_edit": ["Nile Export Owner", "Nile Export Admin", "Export Director", "Operations Manager", "Compliance Officer"]},
+            {"state": "Shipped", "doc_status": 1, "allow_edit": ["Nile Export Owner", "Nile Export Admin", "Export Director", "Operations Manager", "Logistics Officer"]},
+            {"state": "Delivered", "doc_status": 1, "allow_edit": ["Nile Export Owner", "Nile Export Admin", "Export Director", "Logistics Officer"]},
+            {"state": "Cancelled", "doc_status": 2, "allow_edit": ["Nile Export Owner", "Nile Export Admin"]}
+        ],
+        "transitions": [
+            {"state": "Draft", "action": "Submit for Approval", "next_state": "Pending", "allowed": ["Nile Export Owner", "Nile Export Admin", "Export Director", "Operations Manager"]},
+            {"state": "Pending", "action": "Mark as Shipped", "next_state": "Shipped", "allowed": ["Nile Export Owner", "Nile Export Admin", "Export Director", "Operations Manager", "Logistics Officer"]},
+            {"state": "Shipped", "action": "Mark Delivered", "next_state": "Delivered", "allowed": ["Nile Export Owner", "Nile Export Admin", "Export Director", "Logistics Officer"]},
+            {"state": "Draft", "action": "Cancel", "next_state": "Cancelled", "allowed": ["Nile Export Owner", "Nile Export Admin"]},
+            {"state": "Pending", "action": "Cancel", "next_state": "Cancelled", "allowed": ["Nile Export Owner", "Nile Export Admin"]}
+        ]
+    },
+    {
+        "doctype": "Workflow",
         "name": "Supplier Station Workflow",
         "document_type": "Supplier Station",
         "workflow_state_field": "status",

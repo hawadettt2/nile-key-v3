@@ -1,0 +1,17 @@
+{
+    "doctype": "DocType",
+    "name": "Shipment Timeline",
+    "module": "Nile Export",
+    "custom": 1,
+    "fields": [
+        {"label": "Timeline ID", "fieldname": "timeline_id", "fieldtype": "Data", "reqd": 1},
+        {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
+        {"label": "Export Shipment", "fieldname": "export_shipment", "fieldtype": "Link", "options": "Export Shipment"},
+        {"label": "Event Type", "fieldname": "event_type", "fieldtype": "Select", "options": "Created\nUpdated\nShipped\nDelivered\nCompliance Checked\nDocument Uploaded"},
+        {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "Pending\nCompleted\nFailed"},
+        {"label": "Timestamp", "fieldname": "timestamp", "fieldtype": "Datetime", "reqd": 1},
+        {"label": "User", "fieldname": "user", "fieldtype": "Link", "options": "User"},
+        {"label": "Description", "fieldname": "description", "fieldtype": "Small Text"},
+        {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
+    ]
+}

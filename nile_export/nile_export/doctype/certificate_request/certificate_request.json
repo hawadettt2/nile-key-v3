@@ -1,0 +1,25 @@
+{
+    "doctype": "DocType",
+    "name": "Certificate Request",
+    "module": "Nile Export",
+    "custom": 1,
+    "fields": [
+        {"label": "Request ID", "fieldname": "request_id", "fieldtype": "Data", "reqd": 1},
+        {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
+        {"label": "Export Shipment", "fieldname": "export_shipment", "fieldtype": "Link", "options": "Export Shipment"},
+        {"label": "Certificate Type", "fieldname": "certificate_type", "fieldtype": "Select", "options": "Certificate of Origin\nPhytosanitary\nQuality Certificate\nOther"},
+        {"label": "Certificate Authority", "fieldname": "certificate_authority", "fieldtype": "Data"},
+        {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "Draft\nPending\nSubmitted\nIssued\nRejected\nCancelled"},
+        {"label": "Workflow State", "fieldname": "workflow_state", "fieldtype": "Data"},
+        {"label": "Assigned To", "fieldname": "assigned_to", "fieldtype": "Link", "options": "User"},
+        {"label": "Priority", "fieldname": "priority", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nUrgent"},
+        {"label": "Due Date", "fieldname": "due_date", "fieldtype": "Date"},
+        {"label": "Submission Date", "fieldname": "submission_date", "fieldtype": "Date"},
+        {"label": "Issue Date", "fieldname": "issue_date", "fieldtype": "Date"},
+        {"label": "Expiry Date", "fieldname": "expiry_date", "fieldtype": "Date"},
+        {"label": "Certificate Number", "fieldname": "certificate_number", "fieldtype": "Data"},
+        {"label": "File Attachment", "fieldname": "file_attachment", "fieldtype": "Attach"},
+        {"label": "Request Details", "fieldname": "request_details", "fieldtype": "Text Editor"},
+        {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
+    ]
+}

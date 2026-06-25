@@ -27,7 +27,14 @@ fixtures = [
 		"Packing Station",
 		"RFQ",
 		"Quality Inspection",
-		"Compliance Check"
+		"Compliance Check",
+		"Integration Log",
+		"Shipping Instruction",
+		"Certificate Request",
+		"Export Task",
+		"Shipment Timeline",
+		"Government Integration Log",
+		"Audit Evidence"
 	]},
 	{"doctype": "Role", "name": [
 		"Nile Export Owner",
@@ -44,7 +51,11 @@ fixtures = [
 		"Government Integration Service",
 		"Guest"
 	]},
-	{"doctype": "Workflow", "name": ["Export Shipment Workflow"]},
+	{"doctype": "Workflow", "name": [
+		"Export Shipment Workflow",
+		"Supplier Station Workflow",
+		"Packing Station Workflow"
+	]},
 	{"doctype": "Custom DocPerm", "name": [
 		"Nile Export Owner - Export Shipment",
 		"Nile Export Admin - Export Shipment",
