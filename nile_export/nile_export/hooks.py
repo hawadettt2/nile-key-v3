@@ -30,5 +30,17 @@ fixtures = [
 		"Auditor",
 		"Government Integration Service",
 		"Guest"
+	]},
+	{"doctype": "Workflow", "name": ["Export Shipment Workflow"]},
+	{"doctype": "Custom DocPerm", "name": [
+		"Nile Export Owner - Export Shipment",
+		"Nile Export Admin - Export Shipment",
+		"Export Director - Export Shipment",
+		"Operations Manager - Export Shipment",
+		"Logistics Officer - Export Shipment",
+		"Auditor - Export Shipment",
+		"Supplier - Export Shipment",
+		"Importer - Export Shipment",
+		"Guest - Export Shipment"
 	]}
 ]
