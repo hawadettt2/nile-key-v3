@@ -1126,17 +1126,22 @@ bench start
 ## 17. الحالة الحالية المختصرة
 
 ```text
-Project: ile-key-v3
-Type: Frappe/ERPNext application
+Project: nile-key-v3 (Nile Export)
+Type: Frappe/ERPNext custom application
 Current ERPNext version: 11.1.49
+Target: Frappe/ERPNext v16.23.1
 Remote: https://github.com/hawadettt2/nile-key-v3.git
 Local OS: Windows 11
 Critical constraint: Deep Freeze wipes local state
-Current recommended source of truth: GitHub + external backups
-Current local DB: MariaDB 12.3.2 on Windows, disposable
-Current Redis: Redis on Windows, disposable
-Bench: not yet established as stable reproducible environment
-Recommended next phase: stable recovery workflow, then modern Frappe/ERPNext foundation
+Source of truth: GitHub (all work committed)
+Completed milestones:
+  - Foundation: hooks.py, pyproject.toml, 19 DocTypes
+  - RBAC: 13 roles with 3 workflows
+  - Integration Layer: 7 API endpoints
+  - CI/CD: GitHub Actions workflow
+Pending milestones:
+  - Bench environment setup (Docker/WSL required)
+  - Production deployment
 ```
 
 ---

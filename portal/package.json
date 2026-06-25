@@ -1,0 +1,22 @@
+{
+  "name": "nile-export-portal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.x",
+    "react": "18.x",
+    "react-dom": "18.x"
+  },
+  "devDependencies": {
+    "@types/react": "18.x",
+    "typescript": "5.x",
+    "tailwindcss": "3.x",
+    "zod": "3.x"
+  }
+}
