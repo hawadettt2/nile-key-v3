@@ -1,0 +1,22 @@
+{
+    "doctype": "DocType",
+    "name": "Importer",
+    "module": "Nile Export",
+    "custom": 1,
+    "fields": [
+        {"label": "Importer Name", "fieldname": "importer_name", "fieldtype": "Data", "reqd": 1},
+        {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
+        {"label": "Company Registration", "fieldname": "company_registration", "fieldtype": "Data"},
+        {"label": "Country", "fieldname": "country", "fieldtype": "Link", "options": "Country"},
+        {"label": "Contact Person", "fieldname": "contact_person", "fieldtype": "Data"},
+        {"label": "Email", "fieldname": "email", "fieldtype": "Data"},
+        {"label": "Phone", "fieldname": "phone", "fieldtype": "Data"},
+        {"label": "Address", "fieldname": "address", "fieldtype": "Small Text"},
+        {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "Active\nInactive"},
+        {"label": "Workflow State", "fieldname": "workflow_state", "fieldtype": "Data"},
+        {"label": "Assigned To", "fieldname": "assigned_to", "fieldtype": "Link", "options": "User"},
+        {"label": "Priority", "fieldname": "priority", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nUrgent"},
+        {"label": "Due Date", "fieldname": "due_date", "fieldtype": "Date"},
+        {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
+    ]
+}

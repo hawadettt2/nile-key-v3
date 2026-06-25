@@ -1,0 +1,2928 @@
+{
+  "app_path": "erpnext",
+  "candidate_customization_files": [
+    {
+      "matched_keywords": [
+        "shipment"
+      ],
+      "path": "erpnext/hooks.py"
+    },
+    {
+      "matched_keywords": [
+        "acid"
+      ],
+      "path": "erpnext/agriculture/setup.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/config/learn.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/config/setup.py"
+    },
+    {
+      "matched_keywords": [
+        "acid"
+      ],
+      "path": "erpnext/healthcare/setup.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/utilities/doctype/rename_tool/rename_tool.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/utilities/doctype/sms_log/sms_log.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/tests/ui/setup_wizard.js"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/support/doctype/issue/issue.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/support/doctype/issue_type/issue_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/support/doctype/support_settings/support_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/support/doctype/warranty_claim/warranty_claim.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/batch/batch.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/bin/bin.json"
+    },
+    {
+      "matched_keywords": [
+        "customs"
+      ],
+      "path": "erpnext/stock/doctype/customs_tariff_number/customs_tariff_number.js"
+    },
+    {
+      "matched_keywords": [
+        "customs",
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/customs_tariff_number/customs_tariff_number.json"
+    },
+    {
+      "matched_keywords": [
+        "customs"
+      ],
+      "path": "erpnext/stock/doctype/customs_tariff_number/customs_tariff_number.py"
+    },
+    {
+      "matched_keywords": [
+        "customs"
+      ],
+      "path": "erpnext/stock/doctype/customs_tariff_number/test_customs_tariff_number.js"
+    },
+    {
+      "matched_keywords": [
+        "customs"
+      ],
+      "path": "erpnext/stock/doctype/customs_tariff_number/test_customs_tariff_number.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/delivery_note/delivery_note.json"
+    },
+    {
+      "matched_keywords": [
+        "shipment"
+      ],
+      "path": "erpnext/stock/doctype/delivery_note/delivery_note.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/delivery_note_item/delivery_note_item.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/delivery_settings/delivery_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/delivery_trip/delivery_trip.json"
+    },
+    {
+      "matched_keywords": [
+        "customs",
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/item/item.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/item_alternative/item_alternative.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/item_attribute/item_attribute.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/item_price/item_price.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/item_variant_settings/item_variant_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/landed_cost_voucher/landed_cost_voucher.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/manufacturer/manufacturer.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/material_request/material_request.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/packing_slip/packing_slip.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/price_list/price_list.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/purchase_receipt/purchase_receipt.json"
+    },
+    {
+      "matched_keywords": [
+        "customs"
+      ],
+      "path": "erpnext/stock/doctype/purchase_receipt/test_records.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/quality_inspection/quality_inspection.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/quality_inspection_template/quality_inspection_template.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/serial_no/serial_no.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/stock_entry/stock_entry.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/stock_ledger_entry/stock_ledger_entry.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/stock_reconciliation/stock_reconciliation.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/stock_settings/stock_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/uom_category/uom_category.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/stock/doctype/warehouse/warehouse.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/shopping_cart/doctype/shopping_cart_settings/shopping_cart_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "government"
+      ],
+      "path": "erpnext/setup/setup_wizard/operations/install_fixtures.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/authorization_rule/authorization_rule.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/brand/brand.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/company/company.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/currency_exchange/currency_exchange.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/customer_group/customer_group.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/email_digest/email_digest.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/global_defaults/global_defaults.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/item_group/item_group.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/naming_series/naming_series.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/party_type/party_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/print_heading/print_heading.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/quotation_lost_reason/quotation_lost_reason.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/sales_partner/sales_partner.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/sales_person/sales_person.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/setup_progress/setup_progress.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/supplier_group/supplier_group.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/terms_and_conditions/terms_and_conditions.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/territory/territory.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/uom/uom.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/setup/doctype/uom_conversion_factor/uom_conversion_factor.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/selling/doctype/campaign/campaign.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/selling/doctype/customer/customer.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/selling/doctype/industry_type/industry_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/selling/doctype/installation_note/installation_note.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/selling/doctype/lead_source/lead_source.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/selling/doctype/pos_closing_voucher/pos_closing_voucher.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/selling/doctype/product_bundle/product_bundle.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/selling/doctype/quotation/quotation.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/selling/doctype/quotation_item/quotation_item.json"
+    },
+    {
+      "matched_keywords": [
+        "shipment"
+      ],
+      "path": "erpnext/selling/doctype/sales_order/sales_order.js"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/selling/doctype/sales_order/sales_order.json"
+    },
+    {
+      "matched_keywords": [
+        "shipment"
+      ],
+      "path": "erpnext/selling/doctype/sales_order/sales_order.py"
+    },
+    {
+      "matched_keywords": [
+        "shipment"
+      ],
+      "path": "erpnext/selling/doctype/sales_order/test_sales_order.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/selling/doctype/sales_order_item/sales_order_item.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/selling/doctype/sales_partner_type/sales_partner_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/selling/doctype/selling_settings/selling_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/selling/doctype/sms_center/sms_center.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/restaurant/doctype/restaurant/restaurant.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/restaurant/doctype/restaurant_menu/restaurant_menu.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/restaurant/doctype/restaurant_order_entry/restaurant_order_entry.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/restaurant/doctype/restaurant_reservation/restaurant_reservation.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/restaurant/doctype/restaurant_table/restaurant_table.json"
+    },
+    {
+      "matched_keywords": [
+        "acid",
+        "customs",
+        "government",
+        "nile"
+      ],
+      "path": "erpnext/regional/india/hsn_code_data.json"
+    },
+    {
+      "matched_keywords": [
+        "audit",
+        "customs",
+        "government"
+      ],
+      "path": "erpnext/regional/india/sac_code_data.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/regional/india/setup.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/regional/india/utils.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/regional/italy/utils.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/regional/report/datev/datev.js"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/regional/report/datev/datev.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/regional/report/electronic_invoice_register/electronic_invoice_register.js"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/regional/report/fichier_des_ecritures_comptables_[fec]/fichier_des_ecritures_comptables_[fec].js"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/regional/report/gstr_1/gstr_1.js"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/regional/report/gstr_1/gstr_1.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/regional/report/gstr_1/gstr_1.py"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/regional/report/gstr_2/gstr_2.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/regional/report/gstr_2/gstr_2.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/regional/report/gst_itemised_purchase_register/gst_itemised_purchase_register.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/regional/report/gst_itemised_sales_register/gst_itemised_sales_register.js"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/regional/report/gst_itemised_sales_register/gst_itemised_sales_register.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/regional/report/gst_purchase_register/gst_purchase_register.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/regional/report/gst_sales_register/gst_sales_register.py"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/regional/report/hsn_wise_summary_of_outward_supplies/hsn_wise_summary_of_outward_supplies.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/public/js/help_links.js"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/public/js/leaflet/leaflet.js"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/public/js/pos/clusterize.js"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/public/js/hub/components/item_publish_dialog.js"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/public/js/hub/components/profile_dialog.js"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/public/js/hub/components/reviews.js"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/projects/doctype/activity_cost/activity_cost.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/projects/doctype/activity_type/activity_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/projects/doctype/project/project.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/projects/doctype/projects_settings/projects_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/projects/doctype/project_type/project_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/projects/doctype/project_update/project_update.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/projects/doctype/task/task.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/projects/doctype/timesheet/timesheet.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/portal/doctype/homepage/homepage.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/portal/doctype/products_settings/products_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "shipment"
+      ],
+      "path": "erpnext/patches/v4_0/create_custom_fields_for_india_specific_fields.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/patches/v4_0/fields_to_be_renamed.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/patches/v4_0/update_custom_print_formats_for_renamed_fields.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/patches/v5_0/rename_total_fields.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/patches/v5_0/replace_renamed_fields_in_custom_scripts_and_print_formats.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/patches/v7_0/remove_features_setup.py"
+    },
+    {
+      "matched_keywords": [
+        "customs"
+      ],
+      "path": "erpnext/patches/v8_1/setup_gst_india.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/non_profit/doctype/certification_application/certification_application.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/non_profit/doctype/certified_consultant/certified_consultant.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/non_profit/doctype/chapter/chapter.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/non_profit/doctype/donor/donor.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/non_profit/doctype/donor_type/donor_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/non_profit/doctype/grant_application/grant_application.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/non_profit/doctype/member/member.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/non_profit/doctype/membership/membership.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/non_profit/doctype/membership_type/membership_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/non_profit/doctype/volunteer/volunteer.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/non_profit/doctype/volunteer_type/volunteer_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/manufacturing/doctype/blanket_order/blanket_order.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/manufacturing/doctype/bom/bom.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/manufacturing/doctype/bom_update_tool/bom_update_tool.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/manufacturing/doctype/job_card/job_card.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/manufacturing/doctype/manufacturing_settings/manufacturing_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/manufacturing/doctype/operation/operation.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/manufacturing/doctype/production_plan/production_plan.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/manufacturing/doctype/routing/routing.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/manufacturing/doctype/workstation/workstation.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/manufacturing/doctype/work_order/work_order.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/maintenance/doctype/maintenance_schedule/maintenance_schedule.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/maintenance/doctype/maintenance_visit/maintenance_visit.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hub_node/doctype/hub_tracked_item/hub_tracked_item.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hub_node/doctype/marketplace_settings/marketplace_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/additional_salary/additional_salary.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/appraisal/appraisal.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/appraisal_template/appraisal_template.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/attendance/attendance.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/attendance_request/attendance_request.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/branch/branch.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/compensatory_leave_request/compensatory_leave_request.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/daily_work_summary/daily_work_summary.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/daily_work_summary_group/daily_work_summary_group.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/department/department.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/designation/designation.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/driver/driver.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee/employee.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_advance/employee_advance.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_attendance_tool/employee_attendance_tool.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_benefit_application/employee_benefit_application.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_benefit_claim/employee_benefit_claim.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_grade/employee_grade.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_health_insurance/employee_health_insurance.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_incentive/employee_incentive.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_onboarding/employee_onboarding.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_onboarding_template/employee_onboarding_template.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_promotion/employee_promotion.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_separation/employee_separation.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_separation_template/employee_separation_template.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_tax_exemption_category/employee_tax_exemption_category.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_tax_exemption_declaration/employee_tax_exemption_declaration.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_tax_exemption_proof_submission/employee_tax_exemption_proof_submission.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_tax_exemption_sub_category/employee_tax_exemption_sub_category.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_transfer/employee_transfer.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employee_transfer_property/employee_transfer_property.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/employment_type/employment_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/expense_claim/expense_claim.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/expense_claim_type/expense_claim_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/holiday_list/holiday_list.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/hr_settings/hr_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/identification_document_type/identification_document_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/interest/interest.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/job_applicant/job_applicant.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/job_applicant_source/job_applicant_source.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/job_offer/job_offer.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/job_opening/job_opening.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/leave_allocation/leave_allocation.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/leave_application/leave_application.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/leave_block_list/leave_block_list.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/leave_control_panel/leave_control_panel.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/leave_encashment/leave_encashment.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/leave_period/leave_period.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/leave_policy/leave_policy.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/leave_type/leave_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/loan/loan.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/loan_application/loan_application.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/loan_type/loan_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/offer_term/offer_term.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/payroll_entry/payroll_entry.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/payroll_period/payroll_period.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/purpose_of_travel/purpose_of_travel.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/retention_bonus/retention_bonus.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/salary_component/salary_component.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/salary_slip/salary_slip.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/salary_structure/salary_structure.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/salary_structure_assignment/salary_structure_assignment.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/shift_assignment/shift_assignment.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/shift_request/shift_request.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/shift_type/shift_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/staffing_plan/staffing_plan.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/training_event/training_event.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/training_feedback/training_feedback.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/training_program/training_program.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/training_result/training_result.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/travel_request/travel_request.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/upload_attendance/upload_attendance.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/vehicle/vehicle.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hr/doctype/vehicle_log/vehicle_log.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hotels/doctype/hotel_room/hotel_room.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hotels/doctype/hotel_room_package/hotel_room_package.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hotels/doctype/hotel_room_pricing/hotel_room_pricing.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hotels/doctype/hotel_room_reservation/hotel_room_reservation.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hotels/doctype/hotel_room_type/hotel_room_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/hotels/doctype/hotel_settings/hotel_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/antibiotic/antibiotic.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/appointment_type/appointment_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/clinical_procedure/clinical_procedure.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/clinical_procedure_template/clinical_procedure_template.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/complaint/complaint.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/diagnosis/diagnosis.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/dosage_form/dosage_form.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/fee_validity/fee_validity.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/healthcare_practitioner/healthcare_practitioner.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/healthcare_service_unit/healthcare_service_unit.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/healthcare_service_unit_type/healthcare_service_unit_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/healthcare_settings/healthcare_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/inpatient_record/inpatient_record.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/lab_test/lab_test.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/lab_test_sample/lab_test_sample.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/lab_test_template/lab_test_template.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/lab_test_uom/lab_test_uom.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/medical_code/medical_code.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/medical_code_standard/medical_code_standard.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/medical_department/medical_department.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/patient/patient.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/patient_appointment/patient_appointment.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/patient_encounter/patient_encounter.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/patient_medical_record/patient_medical_record.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/practitioner_schedule/practitioner_schedule.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/prescription_dosage/prescription_dosage.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/prescription_duration/prescription_duration.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/sample_collection/sample_collection.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/sensitivity/sensitivity.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/healthcare/doctype/vital_signs/vital_signs.json"
+    },
+    {
+      "matched_keywords": [
+        "shipment"
+      ],
+      "path": "erpnext/erpnext_integrations/doctype/amazon_mws_settings/amazon_methods.py"
+    },
+    {
+      "matched_keywords": [
+        "shipment"
+      ],
+      "path": "erpnext/erpnext_integrations/doctype/amazon_mws_settings/amazon_mws_api.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/erpnext_integrations/doctype/amazon_mws_settings/amazon_mws_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/erpnext_integrations/doctype/gocardless_mandate/gocardless_mandate.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/erpnext_integrations/doctype/gocardless_settings/gocardless_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/erpnext_integrations/doctype/plaid_settings/plaid_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/erpnext_integrations/doctype/quickbooks_migrator/quickbooks_migrator.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/erpnext_integrations/doctype/shopify_log/shopify_log.json"
+    },
+    {
+      "matched_keywords": [
+        "export",
+        "shipment"
+      ],
+      "path": "erpnext/erpnext_integrations/doctype/shopify_settings/shopify_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/erpnext_integrations/doctype/woocommerce_settings/woocommerce_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/academic_term/academic_term.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/academic_year/academic_year.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/assessment_criteria/assessment_criteria.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/assessment_criteria_group/assessment_criteria_group.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/assessment_group/assessment_group.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/assessment_plan/assessment_plan.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/assessment_result/assessment_result.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/assessment_result_tool/assessment_result_tool.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/course/course.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/course_schedule/course_schedule.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/course_scheduling_tool/course_scheduling_tool.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/education_settings/education_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/fees/fees.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/fee_category/fee_category.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/fee_schedule/fee_schedule.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/fee_structure/fee_structure.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/grading_scale/grading_scale.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/guardian/guardian.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/instructor/instructor.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/program/program.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/program_enrollment/program_enrollment.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/program_enrollment_tool/program_enrollment_tool.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/room/room.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/school_house/school_house.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/student/student.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/student_admission/student_admission.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/student_applicant/student_applicant.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/student_attendance/student_attendance.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/student_attendance_tool/student_attendance_tool.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/student_batch_name/student_batch_name.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/student_category/student_category.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/student_group/student_group.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/student_group_creation_tool/student_group_creation_tool.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/student_language/student_language.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/student_leave_application/student_leave_application.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/student_log/student_log.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/education/doctype/student_report_generation_tool/student_report_generation_tool.json"
+    },
+    {
+      "matched_keywords": [
+        "acid",
+        "customs"
+      ],
+      "path": "erpnext/demo/data/drug_list.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/demo/data/room.json"
+    },
+    {
+      "matched_keywords": [
+        "logistics"
+      ],
+      "path": "erpnext/demo/setup/education.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/crm/doctype/contract/contract.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/crm/doctype/contract_template/contract_template.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/crm/doctype/lead/lead.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/crm/doctype/market_segment/market_segment.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/crm/doctype/opportunity/opportunity.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/crm/doctype/opportunity_type/opportunity_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/crm/doctype/sales_stage/sales_stage.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/buying/doctype/buying_settings/buying_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/buying/doctype/purchase_order/purchase_order.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/buying/doctype/request_for_quotation/request_for_quotation.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/buying/doctype/supplier/supplier.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/buying/doctype/supplier_quotation/supplier_quotation.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/buying/doctype/supplier_scorecard/supplier_scorecard.json"
+    },
+    {
+      "matched_keywords": [
+        "shipment"
+      ],
+      "path": "erpnext/buying/doctype/supplier_scorecard/supplier_scorecard.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/buying/doctype/supplier_scorecard_criteria/supplier_scorecard_criteria.json"
+    },
+    {
+      "matched_keywords": [
+        "shipment"
+      ],
+      "path": "erpnext/buying/doctype/supplier_scorecard_criteria/test_supplier_scorecard_criteria.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/buying/doctype/supplier_scorecard_period/supplier_scorecard_period.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/buying/doctype/supplier_scorecard_standing/supplier_scorecard_standing.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/buying/doctype/supplier_scorecard_variable/supplier_scorecard_variable.json"
+    },
+    {
+      "matched_keywords": [
+        "shipment"
+      ],
+      "path": "erpnext/buying/doctype/supplier_scorecard_variable/supplier_scorecard_variable.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/assets/doctype/asset/asset.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/assets/doctype/asset_category/asset_category.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/assets/doctype/asset_maintenance/asset_maintenance.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/assets/doctype/asset_maintenance_log/asset_maintenance_log.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/assets/doctype/asset_maintenance_team/asset_maintenance_team.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/assets/doctype/asset_movement/asset_movement.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/assets/doctype/asset_repair/asset_repair.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/assets/doctype/asset_settings/asset_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/assets/doctype/asset_value_adjustment/asset_value_adjustment.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/assets/doctype/location/location.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/agriculture/doctype/agriculture_analysis_criteria/agriculture_analysis_criteria.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/agriculture/doctype/crop/crop.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/agriculture/doctype/crop_cycle/crop_cycle.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/agriculture/doctype/disease/disease.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/agriculture/doctype/fertilizer/fertilizer.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/agriculture/doctype/plant_analysis/plant_analysis.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/agriculture/doctype/soil_analysis/soil_analysis.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/agriculture/doctype/soil_texture/soil_texture.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/agriculture/doctype/water_analysis/water_analysis.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/agriculture/doctype/weather/weather.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/report/financial_statements.html"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/accounts_payable/accounts_payable.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/accounts_payable_summary/accounts_payable_summary.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/balance_sheet/balance_sheet.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/bank_clearance_summary/bank_clearance_summary.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/bank_reconciliation_statement/bank_reconciliation_statement.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/budget_variance_report/budget_variance_report.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/cash_flow/cash_flow.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/consolidated_financial_statement/consolidated_financial_statement.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/general_ledger/general_ledger.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/gross_and_net_profit_report/gross_and_net_profit_report.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/inactive_sales_items/inactive_sales_items.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/item_wise_purchase_register/item_wise_purchase_register.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/payment_period_based_on_invoice_date/payment_period_based_on_invoice_date.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/profitability_analysis/profitability_analysis.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/profit_and_loss_statement/profit_and_loss_statement.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/purchase_invoice_trends/purchase_invoice_trends.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/purchase_order_items_to_be_billed/purchase_order_items_to_be_billed.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/purchase_register/purchase_register.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/received_items_to_be_billed/received_items_to_be_billed.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/tds_computation_summary/tds_computation_summary.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/tds_payable_monthly/tds_payable_monthly.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/trial_balance/trial_balance.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/trial_balance_for_party/trial_balance_for_party.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/report/trial_balance_simple/trial_balance_simple.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/print_format/journal_auditing_voucher/journal_auditing_voucher.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/print_format/purchase_auditing_voucher/purchase_auditing_voucher.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/print_format/sales_auditing_voucher/sales_auditing_voucher.json"
+    },
+    {
+      "matched_keywords": [
+        "audit",
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/account/account.json"
+    },
+    {
+      "matched_keywords": [
+        "customs"
+      ],
+      "path": "erpnext/accounts/doctype/account/test_account.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/accounting_period/accounting_period.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/accounts_settings/accounts_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/account_subtype/account_subtype.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/account_type/account_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/bank/bank.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/bank_account/bank_account.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/bank_guarantee/bank_guarantee.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/bank_reconciliation/bank_reconciliation.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/bank_statement_settings/bank_statement_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/bank_statement_transaction_entry/bank_statement_transaction_entry.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/bank_statement_transaction_settings/bank_statement_transaction_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/bank_transaction/bank_transaction.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/budget/budget.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/cashier_closing/cashier_closing.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/cash_flow_mapper/cash_flow_mapper.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/cash_flow_mapping/cash_flow_mapping.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/cash_flow_mapping_template/cash_flow_mapping_template.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/cash_flow_mapping_template_details/cash_flow_mapping_template_details.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/cheque_print_template/cheque_print_template.json"
+    },
+    {
+      "matched_keywords": [
+        "audit",
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/cost_center/cost_center.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/c_form/c_form.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/exchange_rate_revaluation/exchange_rate_revaluation.json"
+    },
+    {
+      "matched_keywords": [
+        "audit",
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/finance_book/finance_book.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/fiscal_year/fiscal_year.json"
+    },
+    {
+      "matched_keywords": [
+        "audit",
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/gl_entry/gl_entry.json"
+    },
+    {
+      "matched_keywords": [
+        "audit",
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/journal_entry/journal_entry.json"
+    },
+    {
+      "matched_keywords": [
+        "audit",
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/loyalty_point_entry/loyalty_point_entry.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/loyalty_program/loyalty_program.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/mode_of_payment/mode_of_payment.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/monthly_distribution/monthly_distribution.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/opening_invoice_creation_tool/opening_invoice_creation_tool.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/payment_entry/payment_entry.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/payment_gateway_account/payment_gateway_account.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/payment_order/payment_order.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/payment_reconciliation/payment_reconciliation.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/payment_request/payment_request.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/payment_term/payment_term.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/payment_terms_template/payment_terms_template.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/period_closing_voucher/period_closing_voucher.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/pos_profile/pos_profile.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/pos_profile_user/pos_profile_user.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/pos_settings/pos_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/pricing_rule/pricing_rule.json"
+    },
+    {
+      "matched_keywords": [
+        "audit",
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/purchase_invoice/purchase_invoice.json"
+    },
+    {
+      "matched_keywords": [
+        "customs"
+      ],
+      "path": "erpnext/accounts/doctype/purchase_invoice/test_purchase_invoice.py"
+    },
+    {
+      "matched_keywords": [
+        "customs"
+      ],
+      "path": "erpnext/accounts/doctype/purchase_invoice/test_records.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/purchase_taxes_and_charges_template/purchase_taxes_and_charges_template.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/sales_invoice/sales_invoice.json"
+    },
+    {
+      "matched_keywords": [
+        "customs"
+      ],
+      "path": "erpnext/accounts/doctype/sales_invoice/test_records.json"
+    },
+    {
+      "matched_keywords": [
+        "customs",
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/sales_invoice/test_sales_invoice.py"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/sales_invoice_item/sales_invoice_item.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/sales_taxes_and_charges_template/sales_taxes_and_charges_template.json"
+    },
+    {
+      "matched_keywords": [
+        "customs"
+      ],
+      "path": "erpnext/accounts/doctype/sales_taxes_and_charges_template/test_records.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/shareholder/shareholder.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/share_transfer/share_transfer.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/share_type/share_type.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/shipping_rule/shipping_rule.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/subscription/subscription.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/subscription_plan/subscription_plan.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/subscription_settings/subscription_settings.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/tax_rule/tax_rule.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/tax_withholding_category/tax_withholding_category.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/unverified/be_l10nbe_chart_template.json"
+    },
+    {
+      "matched_keywords": [
+        "acid",
+        "audit",
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/unverified/co_vauxoo_mx_chart_template.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/unverified/es_account_chart_template_common.json"
+    },
+    {
+      "matched_keywords": [
+        "audit"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/unverified/pe_pe_chart_template.json"
+    },
+    {
+      "matched_keywords": [
+        "acid"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/unverified/pt_pt_chart_template.json"
+    },
+    {
+      "matched_keywords": [
+        "nile"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/unverified/ro_ro_chart_template.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/unverified/syscohada_syscohada_chart_template.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/unverified/uy_uy_chart_template.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/unverified/ve_ve_chart_template_amd.json"
+    },
+    {
+      "matched_keywords": [
+        "audit",
+        "customs"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/verified/ae_uae_chart_template_standard.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/verified/ar_chart_of_accounts.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/verified/br_planilha_de_contas.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/verified/hu_chart_of_accounts.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/verified/mx_plan_de_cuentas.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/verified/ni_catalogo_de_cuentas.json"
+    },
+    {
+      "matched_keywords": [
+        "export"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/verified/nl_grootboekschema.json"
+    },
+    {
+      "matched_keywords": [
+        "audit",
+        "government"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/verified/sg_default_coa.json"
+    },
+    {
+      "matched_keywords": [
+        "audit",
+        "government"
+      ],
+      "path": "erpnext/accounts/doctype/account/chart_of_accounts/verified/sg_fnb_coa.json"
+    }
+  ],
+  "doc_events": {
+    "Address": {
+      "validate": 2
+    },
+    "Contact": {
+      "on_trash": 1
+    },
+    "Payment Entry": {
+      "on_submit": 2,
+      "on_trash": 1
+    },
+    "Sales Invoice": {
+      "on_cancel": 1,
+      "on_submit": 2,
+      "on_trash": 1
+    },
+    "Sales Invoice, Purchase Invoice, Delivery Note": {
+      "validate": 1
+    },
+    "Sales Taxes and Charges Template, Price List": {
+      "on_update": 1
+    },
+    "Stock Entry": {
+      "on_cancel": 1,
+      "on_submit": 1
+    },
+    "User": {
+      "after_insert": 1,
+      "on_update": 2,
+      "validate": 1
+    },
+    "Website Settings": {
+      "validate": 1
+    }
+  },
+  "fixtures": [],
+  "hook_sections": {
+    "after_install": 1,
+    "app_color": 1,
+    "app_description": 1,
+    "app_email": 1,
+    "app_icon": 1,
+    "app_include_css": 1,
+    "app_include_js": 1,
+    "app_license": 1,
+    "app_name": 1,
+    "app_publisher": 1,
+    "app_title": 1,
+    "before_install": 1,
+    "before_tests": 1,
+    "boot_session": 1,
+    "bot_parsers": 1,
+    "calendars": 6,
+    "default_mail_footer": 1,
+    "default_roles": 9,
+    "develop_version": 1,
+    "doc_events": 19,
+    "doctype_js": 2,
+    "domains": 9,
+    "dump_report_map": 1,
+    "email_append_to": 4,
+    "email_brand_image": 1,
+    "get_help_messages": 1,
+    "get_site_info": 1,
+    "get_translated_dict": 1,
+    "get_user_progress_slides": 1,
+    "has_website_permission": 11,
+    "my_account_context": 1,
+    "notification_config": 1,
+    "on_logout": 1,
+    "on_session_creation": 1,
+    "payment_gateway_enabled": 1,
+    "regional_overrides": 11,
+    "scheduler_events": 29,
+    "setup_wizard_requires": 1,
+    "setup_wizard_stages": 1,
+    "setup_wizard_test": 1,
+    "source_link": 1,
+    "standard_portal_menu_items": 1,
+    "standard_queries": 2,
+    "treeviews": 9,
+    "update_and_get_user_progress": 1,
+    "update_website_context": 1,
+    "web_include_css": 1,
+    "web_include_js": 1,
+    "website_context": 2,
+    "website_generators": 6,
+    "website_route_rules": 1,
+    "welcome_email": 1
+  },
+  "repo_root": ".",
+  "scheduler_events": {
+    "all": 1,
+    "daily": 18,
+    "daily_long": 1,
+    "hourly": 6,
+    "monthly_long": 3
+  },
+  "website_route_rules": []
+}

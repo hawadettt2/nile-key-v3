@@ -1,0 +1,19 @@
+{
+    "doctype": "DocType",
+    "name": "Shipping Line",
+    "module": "Nile Export",
+    "custom": 1,
+    "fields": [
+        {"label": "Shipping Line Name", "fieldname": "shipping_line_name", "fieldtype": "Data", "reqd": 1},
+        {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
+        {"label": "Carrier", "fieldname": "carrier", "fieldtype": "Data"},
+        {"label": "Contact Email", "fieldname": "contact_email", "fieldtype": "Data"},
+        {"label": "Contact Phone", "fieldname": "contact_phone", "fieldtype": "Data"},
+        {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "Active\nInactive"},
+        {"label": "Workflow State", "fieldname": "workflow_state", "fieldtype": "Data"},
+        {"label": "Assigned To", "fieldname": "assigned_to", "fieldtype": "Link", "options": "User"},
+        {"label": "Priority", "fieldname": "priority", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nUrgent"},
+        {"label": "Due Date", "fieldname": "due_date", "fieldtype": "Date"},
+        {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
+    ]
+}

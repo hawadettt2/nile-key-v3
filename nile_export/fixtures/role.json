@@ -1,0 +1,15 @@
+[
+	{"doctype": "Role", "role_name": "Nile Export Owner", "disabled": 0},
+	{"doctype": "Role", "role_name": "Nile Export Admin", "disabled": 0},
+	{"doctype": "Role", "role_name": "Export Director", "disabled": 0},
+	{"doctype": "Role", "role_name": "Operations Manager", "disabled": 0},
+	{"doctype": "Role", "role_name": "Compliance Officer", "disabled": 0},
+	{"doctype": "Role", "role_name": "Logistics Officer", "disabled": 0},
+	{"doctype": "Role", "role_name": "Finance Officer", "disabled": 0},
+	{"doctype": "Role", "role_name": "Supplier", "disabled": 0},
+	{"doctype": "Role", "role_name": "Importer", "disabled": 0},
+	{"doctype": "Role", "role_name": "Agent", "disabled": 0},
+	{"doctype": "Role", "role_name": "Auditor", "disabled": 0},
+	{"doctype": "Role", "role_name": "Government Integration Service", "disabled": 0},
+	{"doctype": "Role", "role_name": "Guest", "disabled": 0}
+]

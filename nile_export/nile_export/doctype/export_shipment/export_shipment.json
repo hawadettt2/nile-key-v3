@@ -1,0 +1,22 @@
+{
+    "doctype": "DocType",
+    "name": "Export Shipment",
+    "module": "Nile Export",
+    "custom": 1,
+    "fields": [
+        {"label": "Shipment Name", "fieldname": "shipment_name", "fieldtype": "Data", "reqd": 1},
+        {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
+        {"label": "Importer", "fieldname": "importer", "fieldtype": "Link", "options": "Importer"},
+        {"label": "Shipping Line", "fieldname": "shipping_line", "fieldtype": "Link", "options": "Shipping Line"},
+        {"label": "Export Document", "fieldname": "export_document", "fieldtype": "Link", "options": "Export Document"},
+        {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "Draft\nPending\nShipped\nDelivered\nCancelled"},
+        {"label": "Workflow State", "fieldname": "workflow_state", "fieldtype": "Data"},
+        {"label": "Assigned To", "fieldname": "assigned_to", "fieldtype": "Link", "options": "User"},
+        {"label": "Priority", "fieldname": "priority", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nUrgent"},
+        {"label": "Due Date", "fieldname": "due_date", "fieldtype": "Date"},
+        {"label": "Description", "fieldname": "description", "fieldtype": "Small Text"},
+        {"label": "Linked Documents", "fieldname": "linked_documents", "fieldtype": "Section Break"},
+        {"label": "Attachments", "fieldname": "attachments", "fieldtype": "Section Break"},
+        {"label": "Audit Trail", "fieldname": "audit_trail", "fieldtype": "Section Break", "read_only": 1}
+    ]
+}

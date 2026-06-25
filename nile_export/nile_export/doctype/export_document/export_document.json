@@ -1,0 +1,20 @@
+{
+    "doctype": "DocType",
+    "name": "Export Document",
+    "module": "Nile Export",
+    "custom": 1,
+    "fields": [
+        {"label": "Document Name", "fieldname": "document_name", "fieldtype": "Data", "reqd": 1},
+        {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
+        {"label": "Type", "fieldname": "doc_type", "fieldtype": "Select", "options": "Commercial Invoice\nPacking List\nCertificate of Origin\nBill of Lading\nOther"},
+        {"label": "Date", "fieldname": "doc_date", "fieldtype": "Date"},
+        {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "Draft\nPending\nApproved\nRejected"},
+        {"label": "Workflow State", "fieldname": "workflow_state", "fieldtype": "Data"},
+        {"label": "Assigned To", "fieldname": "assigned_to", "fieldtype": "Link", "options": "User"},
+        {"label": "Priority", "fieldname": "priority", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nUrgent"},
+        {"label": "Due Date", "fieldname": "due_date", "fieldtype": "Date"},
+        {"label": "Linked Shipment", "fieldname": "linked_shipment", "fieldtype": "Link", "options": "Export Shipment"},
+        {"label": "File Attachment", "fieldname": "file_attachment", "fieldtype": "Attach"},
+        {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
+    ]
+}
