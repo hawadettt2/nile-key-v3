@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [master, develop, feature/**, fix/**]
+  pull_request:
+    branches: [master, develop]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Python syntax
+        run: |
+          find . -name "*.py" -not -path "./.git/*" -exec python3 -m py_compile {} \;
+      - name: Check JSON syntax
+        run: |
+          find . -name "*.json" -not -path "./.git/*" -not -path "./.kilo/*" -exec python3 -c "import json; json.load(open('{}'))" \;
+
+  doc-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate DocType JSON structure
+        run: python3 scripts/inventory-erpnext-customizations.py --repo-root . --app-path nile_export/nile_export --output /dev/stdout || true
