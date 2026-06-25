@@ -1,0 +1,21 @@
+{
+    "doctype": "DocType",
+    "name": "Quality Inspection",
+    "module": "Nile Export",
+    "custom": 1,
+    "fields": [
+        {"label": "Inspection ID", "fieldname": "inspection_id", "fieldtype": "Data", "reqd": 1},
+        {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
+        {"label": "Export Shipment", "fieldname": "export_shipment", "fieldtype": "Link", "options": "Export Shipment"},
+        {"label": "Supplier", "fieldname": "supplier", "fieldtype": "Link", "options": "Supplier"},
+        {"label": "Inspector", "fieldname": "inspector", "fieldtype": "Link", "options": "User"},
+        {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "Pending\nIn Progress\nPassed\nFailed\nCancelled"},
+        {"label": "Workflow State", "fieldname": "workflow_state", "fieldtype": "Data"},
+        {"label": "Assigned To", "fieldname": "assigned_to", "fieldtype": "Link", "options": "User"},
+        {"label": "Priority", "fieldname": "priority", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nUrgent"},
+        {"label": "Due Date", "fieldname": "due_date", "fieldtype": "Date"},
+        {"label": "Inspection Date", "fieldname": "inspection_date", "fieldtype": "Date"},
+        {"label": "Result Details", "fieldname": "result_details", "fieldtype": "Text Editor"},
+        {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
+    ]
+}

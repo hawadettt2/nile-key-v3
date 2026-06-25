@@ -1,0 +1,24 @@
+{
+    "doctype": "DocType",
+    "name": "RFQ",
+    "module": "Nile Export",
+    "custom": 1,
+    "fields": [
+        {"label": "RFQ ID", "fieldname": "rfq_id", "fieldtype": "Data", "reqd": 1},
+        {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
+        {"label": "Title", "fieldname": "title", "fieldtype": "Data"},
+        {"label": "Importer", "fieldname": "importer", "fieldtype": "Link", "options": "Importer"},
+        {"label": "Description", "fieldname": "description", "fieldtype": "Text Editor"},
+        {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "Draft\nOpen\nClosed\nCancelled"},
+        {"label": "Workflow State", "fieldname": "workflow_state", "fieldtype": "Data"},
+        {"label": "Assigned To", "fieldname": "assigned_to", "fieldtype": "Link", "options": "User"},
+        {"label": "Priority", "fieldname": "priority", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nUrgent"},
+        {"label": "Due Date", "fieldname": "due_date", "fieldtype": "Date"},
+        {"label": "Submission Deadline", "fieldname": "submission_deadline", "fieldtype": "Date"},
+        {"label": "Quantity Required", "fieldname": "quantity_required", "fieldtype": "Float"},
+        {"label": "Unit", "fieldname": "unit", "fieldtype": "Data"},
+        {"label": "Target Price", "fieldname": "target_price", "fieldtype": "Currency"},
+        {"label": "Currency", "fieldname": "currency", "fieldtype": "Link", "options": "Currency"},
+        {"label": "Shipping Line", "fieldname": "shipping_line", "fieldtype": "Link", "options": "Shipping Line"}
+    ]
+}

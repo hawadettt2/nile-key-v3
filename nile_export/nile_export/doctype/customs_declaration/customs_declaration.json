@@ -1,0 +1,24 @@
+{
+    "doctype": "DocType",
+    "name": "Customs Declaration",
+    "module": "Nile Export",
+    "custom": 1,
+    "fields": [
+        {"label": "Declaration ID", "fieldname": "declaration_id", "fieldtype": "Data", "reqd": 1},
+        {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
+        {"label": "Export Shipment", "fieldname": "export_shipment", "fieldtype": "Link", "options": "Export Shipment"},
+        {"label": "Port of Loading", "fieldname": "port_of_loading", "fieldtype": "Data"},
+        {"label": "Port of Discharge", "fieldname": "port_of_discharge", "fieldtype": "Data"},
+        {"label": "Customs Tariff", "fieldname": "customs_tariff", "fieldtype": "Link", "options": "Customs Tariff Number"},
+        {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "Draft\nPending\nSubmitted\nApproved\nRejected"},
+        {"label": "Workflow State", "fieldname": "workflow_state", "fieldtype": "Data"},
+        {"label": "Assigned To", "fieldname": "assigned_to", "fieldtype": "Link", "options": "User"},
+        {"label": "Priority", "fieldname": "priority", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nUrgent"},
+        {"label": "Due Date", "fieldname": "due_date", "fieldtype": "Date"},
+        {"label": "Declaration Date", "fieldname": "declaration_date", "fieldtype": "Date"},
+        {"label": "Value", "fieldname": "value", "fieldtype": "Currency"},
+        {"label": "Currency", "fieldname": "currency", "fieldtype": "Link", "options": "Currency"},
+        {"label": "Documents Required", "fieldname": "documents_required", "fieldtype": "Small Text"},
+        {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
+    ]
+}

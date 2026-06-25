@@ -15,7 +15,20 @@ doctype_js = {
 }
 
 fixtures = [
-	{"doctype": "DocType", "name": ["Export Shipment", "Supplier", "Importer", "Export Document", "Shipping Line"]},
+	{"doctype": "DocType", "name": [
+		"Export Shipment",
+		"Supplier",
+		"Importer",
+		"Export Document",
+		"Shipping Line",
+		"ACID Record",
+		"Customs Declaration",
+		"Supplier Station",
+		"Packing Station",
+		"RFQ",
+		"Quality Inspection",
+		"Compliance Check"
+	]},
 	{"doctype": "Role", "name": [
 		"Nile Export Owner",
 		"Nile Export Admin",

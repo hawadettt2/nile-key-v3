@@ -1,0 +1,22 @@
+{
+    "doctype": "DocType",
+    "name": "Compliance Check",
+    "module": "Nile Export",
+    "custom": 1,
+    "fields": [
+        {"label": "Check ID", "fieldname": "check_id", "fieldtype": "Data", "reqd": 1},
+        {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
+        {"label": "Export Shipment", "fieldname": "export_shipment", "fieldtype": "Link", "options": "Export Shipment"},
+        {"label": "Compliance Type", "fieldname": "compliance_type", "fieldtype": "Select", "options": "Phytosanitary\nCertificate of Origin\nQuality Certificate\nOther"},
+        {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "Pending\nIn Progress\nPassed\nFailed\nCancelled"},
+        {"label": "Workflow State", "fieldname": "workflow_state", "fieldtype": "Data"},
+        {"label": "Assigned To", "fieldname": "assigned_to", "fieldtype": "Link", "options": "User"},
+        {"label": "Priority", "fieldname": "priority", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nUrgent"},
+        {"label": "Due Date", "fieldname": "due_date", "fieldtype": "Date"},
+        {"label": "Check Date", "fieldname": "check_date", "fieldtype": "Date"},
+        {"label": "Review Date", "fieldname": "review_date", "fieldtype": "Date"},
+        {"label": "Compliance Officer", "fieldname": "compliance_officer", "fieldtype": "Link", "options": "User"},
+        {"label": "Result Details", "fieldname": "result_details", "fieldtype": "Text Editor"},
+        {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
+    ]
+}
