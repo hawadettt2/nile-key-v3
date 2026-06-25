@@ -21,12 +21,13 @@
 - `scripts/check-windows-env.ps1` لفحص WSL2 والافتراضية و MariaDB/Redis على Windows host.
 - `scripts/verify-backup.sh` للتحقق من ملفات backup قبل الاعتماد عليها.
 - `scripts/install-mariadb-redis.sh` و `scripts/init-bench.sh` و `scripts/sanity-check.sh` لاستكمال workflow استعادة bench.
-- `nile_export/` تطبيق مخصص كامل بـ 12 DocTypes.
+- `nile_export/` تطبيق مخصص كامل بـ 19 DocTypes.
 - `ACID Record`, `Customs Declaration`, `Supplier Station`, `Packing Station` DocTypes.
 - `RFQ`, `Quality Inspection`, `Compliance Check` DocTypes.
+- `Integration Log`, `Shipping Instruction`, `Certificate Request` DocTypes.
+- `Export Task`, `Shipment Timeline`, `Government Integration Log`, `Audit Evidence` DocTypes.
 - RBAC Roles (13 أدور) في fixtures/role.json.
-- Export Shipment Workflow مع 5 حالات.
-- Supplier Station و Packing Station Workflows.
+- Export Shipment, Supplier Station, Packing Station Workflows (3 workflows).
 - GitHub Actions CI workflow للتحقق من النحو.
 
 ### Changed
