@@ -29,6 +29,14 @@
 - RBAC Roles (13 أدور) في fixtures/role.json.
 - Export Shipment, Supplier Station, Packing Station Workflows (3 workflows).
 - GitHub Actions CI workflow للتحقق من النحو.
+- Integration Layer API endpoints (7 endpoints):
+  - Shipments: create, update status
+  - Suppliers: list, create
+  - Importers: list, create
+  - RFQ: create, submit quotation
+  - Documents: upload, list
+  - Compliance: create check, update result
+  - Integrations: log outbound, log inbound, retry failed (with idempotency)
 
 ### Changed
 
@@ -40,10 +48,11 @@
 - تم استعادة وتحسين بنية nile_export بعد إعادة الهيكلة.
 
 ### Security
-
 - تم توثيق منع تخزين الأسرار داخل Git.
 - تم توثيق ضرورة backups مشفرة وخارجية.
 - تم توثيق ضرورة RBAC و audit logging.
+- تم تنفيذ idempotency keys للـ API integrations.
+- تم تنفيذ logging تلقائي للـ integration logs.
 
 ---
 
