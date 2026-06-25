@@ -10,7 +10,7 @@
 
 ### Added
 
-- `MASTER_ROADMAP.md` كوثيقة استراتيجية وتقنية واستمرارية.
+- `MASTER_ROADMAP.md` كوثيقة استراتيجية وتقمية واستمرارية.
 - `RECOVERY_RUNBOOK.md` كدليل عملي لاستعادة البيئة بعد أي مسح محلي.
 - `ARCHITECTURE_DECISIONS.md` لتسجيل القرارات المعمارية.
 - `BACKUP_RESTORE_PLAN.md` لتحديد سياسة النسخ والاستعادة.
@@ -21,6 +21,13 @@
 - `scripts/check-windows-env.ps1` لفحص WSL2 والافتراضية و MariaDB/Redis على Windows host.
 - `scripts/verify-backup.sh` للتحقق من ملفات backup قبل الاعتماد عليها.
 - `scripts/install-mariadb-redis.sh` و `scripts/init-bench.sh` و `scripts/sanity-check.sh` لاستكمال workflow استعادة bench.
+- `nile_export/` تطبيق مخصص كامل بـ 12 DocTypes.
+- `ACID Record`, `Customs Declaration`, `Supplier Station`, `Packing Station` DocTypes.
+- `RFQ`, `Quality Inspection`, `Compliance Check` DocTypes.
+- RBAC Roles (13 أدور) في fixtures/role.json.
+- Export Shipment Workflow مع 5 حالات.
+- Supplier Station و Packing Station Workflows.
+- GitHub Actions CI workflow للتحقق من النحو.
 
 ### Changed
 
@@ -29,6 +36,7 @@
 - تم تحديث `BACKUP_RESTORE_PLAN.md` بخطوة التحقق من backup.
 - تم تحديث `MASTER_ROADMAP.md` بقائمة scripts التشغيلية الكاملة.
 - تم توسيع `.gitignore` لحماية `site_config.json` و `sites/` و `logs/` و backups و `.env`.
+- تم استعادة وتحسين بنية nile_export بعد إعادة الهيكلة.
 
 ### Security
 
