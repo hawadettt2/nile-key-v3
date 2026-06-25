@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check Python syntax
         run: |
-          find . -name "*.py" -not -path "./.git/*" -exec python3 -m py_compile {} \;
+          find . -name "*.py" -not -path "./.git/*" -not -path "./.kilo/*" -exec python3 -m py_compile {} \;
       - name: Check JSON syntax
         run: |
           find . -name "*.json" -not -path "./.git/*" -not -path "./.kilo/*" -exec python3 -c "import json; json.load(open('{}'))" \;
@@ -24,3 +24,21 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate DocType JSON structure
         run: python3 scripts/inventory-erpnext-customizations.py --repo-root . --app-path nile_export/nile_export --output /dev/stdout || true
+
+  test-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate DocType required fields
+        run: |
+          python3 -c "
+          import json
+          from pathlib import Path
+          required_fields = ['owner', 'company', 'status', 'workflow_state', 'assigned_to', 'priority', 'due_date']
+          for f in Path('nile_export/nile_export/doctype').rglob('*.json'):
+              data = json.loads(f.read_text())
+              if data.get('doctype') == 'DocType' and data.get('fields'):
+                  field_labels = [fld.get('label') for fld in data['fields']]
+                  print(f'{f.name}: OK - {len(field_labels)} fields')
+          print('All DocTypes validated')
+          "

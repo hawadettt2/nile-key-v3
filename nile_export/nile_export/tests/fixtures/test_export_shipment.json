@@ -1,0 +1,9 @@
+[
+    {
+        "doctype": "Export Shipment",
+        "name": "_Test Shipment",
+        "shipment_name": "_Test Shipment",
+        "status": "Draft",
+        "priority": "Medium"
+    }
+]
