@@ -29,6 +29,8 @@
 - RBAC Roles (13 أدور) في fixtures/role.json.
 - Export Shipment, Supplier Station, Packing Station Workflows (3 workflows).
 - GitHub Actions CI workflow للتحقق من النحو.
+- Integration Layer API endpoints (7 endpoints) مع idempotency.
+- Next.js portal skeleton (landing page بالعربية).
 - Integration Layer API endpoints (7 endpoints):
   - Shipments: create, update status
   - Suppliers: list, create
