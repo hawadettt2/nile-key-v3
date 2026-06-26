@@ -52,9 +52,9 @@ fixtures = [
 		"Guest"
 	]},
 	{"doctype": "Workflow", "name": [
-		"Export Shipment Workflow",
-		"Supplier Station Workflow",
-		"Packing Station Workflow"
+		"Export Shipment",
+		"Supplier Station",
+		"Packing Station"
 	]},
 	{"doctype": "Custom DocPerm", "name": [
 		"Nile Export Owner - Export Shipment",
