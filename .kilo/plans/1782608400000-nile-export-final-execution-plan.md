@@ -3,10 +3,16 @@
 ## Goal
 Deploy Nile Key v3 Digital Export Gateway with all 19 DocTypes, RBAC, workflows, and APIs operational.
 
-## Current State
-- **Deep Freeze:** Removed
-- **Source Code:** Complete (19 DocTypes, 13 roles, 3 workflows, 7 APIs)
-- **Environment:** Not started (Docker not running)
+## Current Status
+- **Deep Freeze:** Removed ✅
+- **Source Code:** Complete ✅
+- **Docker:** NOT STARTED ⚠️ (must be started manually)
+- **Plan:** Pushed to GitHub ✅
+
+## Manual Steps Required
+1. **Start Docker Desktop** from system tray
+2. **Wait** 1-2 minutes for full startup
+3. **Run:** `docker-compose -f pwd.yml up -d`
 
 ## Prerequisites
 - Docker Desktop running on Windows
