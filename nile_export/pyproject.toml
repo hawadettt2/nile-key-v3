@@ -22,3 +22,5 @@ include = ["nile_export*"]
 
 [tool.setuptools.package-data]
 nile_export = ["hooks.py", "modules.txt"]
+nile_export.nile_export = ["doctype/**/*.py"]
+nile_export.tests = ["*.py"]
