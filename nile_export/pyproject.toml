@@ -7,5 +7,9 @@ name = "nile_export"
 version = "0.0.1"
 description = "Digital Export Gateway for Nile Key"
 
+[tool.setuptools]
+packages = ["nile_export"]
+package-dir = {"nile_export" = "nile_export"}
+
 [project.entry-points."frappe.apps"]
 nile_export = "nile_export"
