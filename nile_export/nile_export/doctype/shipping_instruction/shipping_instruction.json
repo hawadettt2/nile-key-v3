@@ -1,3 +1,4 @@
+<<<<<<< ours
 {
     "doctype": "DocType",
     "name": "Shipping Instruction",
@@ -24,3 +25,31 @@
         {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
     ]
 }
+=======
+{
+    "doctype": "DocType",
+    "name": "Shipping Instruction",
+    "module": "nile_export",
+    "fields": [
+        {"label": "Instruction ID", "fieldname": "instruction_id", "fieldtype": "Data", "reqd": 1},
+        {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
+        {"label": "Export Shipment", "fieldname": "export_shipment", "fieldtype": "Link", "options": "Export Shipment"},
+        {"label": "Shipping Line", "fieldname": "shipping_line", "fieldtype": "Link", "options": "Shipping Line"},
+        {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "Draft\nPending\nConfirmed\nCompleted\nCancelled"},
+        {"label": "Workflow State", "fieldname": "workflow_state", "fieldtype": "Data"},
+        {"label": "Assigned To", "fieldname": "assigned_to", "fieldtype": "Link", "options": "User"},
+        {"label": "Priority", "fieldname": "priority", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nUrgent"},
+        {"label": "Due Date", "fieldname": "due_date", "fieldtype": "Date"},
+        {"label": "Vessel Name", "fieldname": "vessel_name", "fieldtype": "Data"},
+        {"label": "Voyage Number", "fieldname": "voyage_number", "fieldtype": "Data"},
+        {"label": "Port of Loading", "fieldname": "port_of_loading", "fieldtype": "Data"},
+        {"label": "Port of Discharge", "fieldname": "port_of_discharge", "fieldtype": "Data"},
+        {"label": "Container Number", "fieldname": "container_number", "fieldtype": "Data"},
+        {"label": "Seal Number", "fieldname": "seal_number", "fieldtype": "Data"},
+        {"label": "Cargo Description", "fieldname": "cargo_description", "fieldtype": "Small Text"},
+        {"label": "Weight", "fieldname": "weight", "fieldtype": "Float"},
+        {"label": "Volume", "fieldname": "volume", "fieldtype": "Float"},
+        {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
+    ]
+}
+>>>>>>> theirs

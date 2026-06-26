@@ -1,3 +1,4 @@
+<<<<<<< ours
 {
     "doctype": "DocType",
     "name": "Audit Evidence",
@@ -17,3 +18,24 @@
         {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
     ]
 }
+=======
+{
+    "doctype": "DocType",
+    "name": "Audit Evidence",
+    "module": "nile_export",
+    "fields": [
+        {"label": "Evidence ID", "fieldname": "evidence_id", "fieldtype": "Data", "reqd": 1},
+        {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
+        {"label": "Document Type", "fieldname": "document_type", "fieldtype": "Link", "options": "DocType"},
+        {"label": "Document Name", "fieldname": "document_name", "fieldtype": "Dynamic Link", "options": "document_type"},
+        {"label": "Evidence Type", "fieldname": "evidence_type", "fieldtype": "Select", "options": "Document\nScreenshot\nLog\nApproval\nSignature"},
+        {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "Collected\nValidated\nArchived"},
+        {"label": "Collected By", "fieldname": "collected_by", "fieldtype": "Link", "options": "User"},
+        {"label": "Collected On", "fieldname": "collected_on", "fieldtype": "Date"},
+        {"label": "Evidence File", "fieldname": "evidence_file", "fieldtype": "Attach"},
+        {"label": "Description", "fieldname": "description", "fieldtype": "Small Text"},
+        {"label": "Audit Trail Reference", "fieldname": "audit_trail_reference", "fieldtype": "Data"},
+        {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
+    ]
+}
+>>>>>>> theirs

@@ -1,3 +1,4 @@
+<<<<<<< ours
 {
     "doctype": "DocType",
     "name": "ACID Record",
@@ -17,3 +18,24 @@
         {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
     ]
 }
+=======
+{
+    "doctype": "DocType",
+    "name": "ACID Record",
+    "module": "nile_export",
+    "fields": [
+        {"label": "Record ID", "fieldname": "record_id", "fieldtype": "Data", "reqd": 1},
+        {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
+        {"label": "Export Shipment", "fieldname": "export_shipment", "fieldtype": "Link", "options": "Export Shipment"},
+        {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "Pending\nSubmitted\nApproved\nRejected"},
+        {"label": "Workflow State", "fieldname": "workflow_state", "fieldtype": "Data"},
+        {"label": "Assigned To", "fieldname": "assigned_to", "fieldtype": "Link", "options": "User"},
+        {"label": "Priority", "fieldname": "priority", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nUrgent"},
+        {"label": "Due Date", "fieldname": "due_date", "fieldtype": "Date"},
+        {"label": "Submission Date", "fieldname": "submission_date", "fieldtype": "Date"},
+        {"label": "Approval Date", "fieldname": "approval_date", "fieldtype": "Date"},
+        {"label": "Reference ID", "fieldname": "reference_id", "fieldtype": "Data"},
+        {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
+    ]
+}
+>>>>>>> theirs

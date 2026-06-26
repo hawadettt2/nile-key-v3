@@ -1,3 +1,4 @@
+<<<<<<< ours
 {
     "doctype": "DocType",
     "name": "Export Task",
@@ -18,3 +19,25 @@
         {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
     ]
 }
+=======
+{
+    "doctype": "DocType",
+    "name": "Export Task",
+    "module": "nile_export",
+    "fields": [
+        {"label": "Task ID", "fieldname": "task_id", "fieldtype": "Data", "reqd": 1},
+        {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
+        {"label": "Export Shipment", "fieldname": "export_shipment", "fieldtype": "Link", "options": "Export Shipment"},
+        {"label": "Assigned To", "fieldname": "assigned_to", "fieldtype": "Link", "options": "User"},
+        {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "Pending\nIn Progress\nCompleted\nCancelled"},
+        {"label": "Workflow State", "fieldname": "workflow_state", "fieldtype": "Data"},
+        {"label": "Priority", "fieldname": "priority", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nUrgent"},
+        {"label": "Due Date", "fieldname": "due_date", "fieldtype": "Date"},
+        {"label": "Start Date", "fieldname": "start_date", "fieldtype": "Date"},
+        {"label": "Completion Date", "fieldname": "completion_date", "fieldtype": "Date"},
+        {"label": "Task Type", "fieldname": "task_type", "fieldtype": "Select", "options": "Documentation\nCompliance\nLogistics\nQuality\nCustoms"},
+        {"label": "Description", "fieldname": "description", "fieldtype": "Small Text"},
+        {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
+    ]
+}
+>>>>>>> theirs

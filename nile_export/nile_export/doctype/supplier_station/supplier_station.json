@@ -1,3 +1,4 @@
+<<<<<<< ours
 {
     "doctype": "DocType",
     "name": "Supplier Station",
@@ -19,3 +20,26 @@
         {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
     ]
 }
+=======
+{
+    "doctype": "DocType",
+    "name": "Supplier Station",
+    "module": "nile_export",
+    "fields": [
+        {"label": "Station Name", "fieldname": "station_name", "fieldtype": "Data", "reqd": 1},
+        {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
+        {"label": "Supplier", "fieldname": "supplier", "fieldtype": "Link", "options": "Supplier"},
+        {"label": "Location", "fieldname": "location", "fieldtype": "Data"},
+        {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "Active\nInactive"},
+        {"label": "Workflow State", "fieldname": "workflow_state", "fieldtype": "Data"},
+        {"label": "Assigned To", "fieldname": "assigned_to", "fieldtype": "Link", "options": "User"},
+        {"label": "Priority", "fieldname": "priority", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nUrgent"},
+        {"label": "Due Date", "fieldname": "due_date", "fieldtype": "Date"},
+        {"label": "Capacity", "fieldname": "capacity", "fieldtype": "Int"},
+        {"label": "Operating Hours", "fieldname": "operating_hours", "fieldtype": "Small Text"},
+        {"label": "Contact Person", "fieldname": "contact_person", "fieldtype": "Data"},
+        {"label": "Phone", "fieldname": "phone", "fieldtype": "Data"},
+        {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
+    ]
+}
+>>>>>>> theirs

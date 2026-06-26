@@ -1,3 +1,4 @@
+<<<<<<< ours
 {
     "doctype": "DocType",
     "name": "Government Integration Log",
@@ -23,3 +24,30 @@
         {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
     ]
 }
+=======
+{
+    "doctype": "DocType",
+    "name": "Government Integration Log",
+    "module": "nile_export",
+    "fields": [
+        {"label": "Log ID", "fieldname": "log_id", "fieldtype": "Data", "reqd": 1},
+        {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
+        {"label": "Government Agency", "fieldname": "government_agency", "fieldtype": "Data"},
+        {"label": "Endpoint", "fieldname": "endpoint", "fieldtype": "Data"},
+        {"label": "Request Type", "fieldname": "request_type", "fieldtype": "Select", "options": "API\nWebhook\nFile Upload\nBatch Sync"},
+        {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "Pending\nSuccess\nFailed\nTimeout"},
+        {"label": "Timestamp", "fieldname": "timestamp", "fieldtype": "Datetime", "reqd": 1},
+        {"label": "Document Type", "fieldname": "document_type", "fieldtype": "Link", "options": "DocType"},
+        {"label": "Document Name", "fieldname": "document_name", "fieldtype": "Data"},
+        {"label": "Document Reference", "fieldname": "document_reference", "fieldtype": "Dynamic Link", "options": "document_type"},
+        {"label": "Request Payload", "fieldname": "request_payload", "fieldtype": "Code", "options": "JSON"},
+        {"label": "Response Payload", "fieldname": "response_payload", "fieldtype": "Code", "options": "JSON"},
+        {"label": "Error Code", "fieldname": "error_code", "fieldtype": "Data"},
+        {"label": "Error Message", "fieldname": "error_message", "fieldtype": "Small Text"},
+        {"label": "Retry Count", "fieldname": "retry_count", "fieldtype": "Int"},
+        {"label": "Signed Request", "fieldname": "signed_request", "fieldtype": "Check"},
+        {"label": "Response Time ms", "fieldname": "response_time_ms", "fieldtype": "Int"},
+        {"label": "Notes", "fieldname": "notes", "fieldtype": "Text Editor"}
+    ]
+}
+>>>>>>> theirs
