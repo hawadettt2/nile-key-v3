@@ -1,13 +1,12 @@
 {
     "doctype": "DocType",
     "name": "Audit Evidence",
-    "module": "Nile Export",
-    "custom": 1,
+    "module": "nile_export",
     "fields": [
         {"label": "Evidence ID", "fieldname": "evidence_id", "fieldtype": "Data", "reqd": 1},
         {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
         {"label": "Document Type", "fieldname": "document_type", "fieldtype": "Link", "options": "DocType"},
-        {"label": "Document Name", "fieldname": "document_name", "fieldtype": "Data"},
+        {"label": "Document Name", "fieldname": "document_name", "fieldtype": "Dynamic Link", "options": "document_type"},
         {"label": "Evidence Type", "fieldname": "evidence_type", "fieldtype": "Select", "options": "Document\nScreenshot\nLog\nApproval\nSignature"},
         {"label": "Status", "fieldname": "status", "fieldtype": "Select", "options": "Collected\nValidated\nArchived"},
         {"label": "Collected By", "fieldname": "collected_by", "fieldtype": "Link", "options": "User"},

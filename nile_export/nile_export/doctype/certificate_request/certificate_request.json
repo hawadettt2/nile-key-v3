@@ -1,8 +1,7 @@
 {
     "doctype": "DocType",
     "name": "Certificate Request",
-    "module": "Nile Export",
-    "custom": 1,
+    "module": "nile_export",
     "fields": [
         {"label": "Request ID", "fieldname": "request_id", "fieldtype": "Data", "reqd": 1},
         {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},

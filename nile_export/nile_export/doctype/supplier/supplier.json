@@ -1,8 +1,7 @@
 {
     "doctype": "DocType",
     "name": "Supplier",
-    "module": "Nile Export",
-    "custom": 1,
+    "module": "nile_export",
     "fields": [
         {"label": "Supplier Name", "fieldname": "supplier_name", "fieldtype": "Data", "reqd": 1},
         {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},

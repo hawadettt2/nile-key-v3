@@ -19,3 +19,6 @@ nile_export = "nile_export"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["nile_export*"]
+
+[tool.setuptools.package-data]
+nile_export = ["hooks.py", "modules.txt"]

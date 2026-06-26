@@ -1,8 +1,7 @@
 {
     "doctype": "DocType",
     "name": "Shipment Timeline",
-    "module": "Nile Export",
-    "custom": 1,
+    "module": "nile_export",
     "fields": [
         {"label": "Timeline ID", "fieldname": "timeline_id", "fieldtype": "Data", "reqd": 1},
         {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},

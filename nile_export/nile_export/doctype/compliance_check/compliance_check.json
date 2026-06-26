@@ -1,8 +1,7 @@
 {
     "doctype": "DocType",
     "name": "Compliance Check",
-    "module": "Nile Export",
-    "custom": 1,
+    "module": "nile_export",
     "fields": [
         {"label": "Check ID", "fieldname": "check_id", "fieldtype": "Data", "reqd": 1},
         {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},

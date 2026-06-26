@@ -1,8 +1,7 @@
 {
     "doctype": "DocType",
     "name": "RFQ",
-    "module": "Nile Export",
-    "custom": 1,
+    "module": "nile_export",
     "fields": [
         {"label": "RFQ ID", "fieldname": "rfq_id", "fieldtype": "Data", "reqd": 1},
         {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},

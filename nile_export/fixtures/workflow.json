@@ -1,50 +1,89 @@
 [
     {
         "doctype": "Workflow",
-        "name": "Export Shipment Workflow",
+        "workflow_name": "Export Shipment",
         "document_type": "Export Shipment",
         "workflow_state_field": "status",
         "states": [
-            {"state": "Draft", "doc_status": 0, "allow_edit": ["Nile Export Owner", "Nile Export Admin", "Export Director", "Operations Manager"]},
-            {"state": "Pending", "doc_status": 0, "allow_edit": ["Nile Export Owner", "Nile Export Admin", "Export Director", "Operations Manager", "Compliance Officer"]},
-            {"state": "Shipped", "doc_status": 1, "allow_edit": ["Nile Export Owner", "Nile Export Admin", "Export Director", "Operations Manager", "Logistics Officer"]},
-            {"state": "Delivered", "doc_status": 1, "allow_edit": ["Nile Export Owner", "Nile Export Admin", "Export Director", "Logistics Officer"]},
-            {"state": "Cancelled", "doc_status": 2, "allow_edit": ["Nile Export Owner", "Nile Export Admin"]}
+            {"state": "Draft", "doc_status": 0, "allow_edit": "Nile Export Owner"},
+            {"state": "Draft", "doc_status": 0, "allow_edit": "Nile Export Admin"},
+            {"state": "Draft", "doc_status": 0, "allow_edit": "Export Director"},
+            {"state": "Draft", "doc_status": 0, "allow_edit": "Operations Manager"},
+            {"state": "Pending", "doc_status": 0, "allow_edit": "Nile Export Owner"},
+            {"state": "Pending", "doc_status": 0, "allow_edit": "Nile Export Admin"},
+            {"state": "Pending", "doc_status": 0, "allow_edit": "Export Director"},
+            {"state": "Pending", "doc_status": 0, "allow_edit": "Operations Manager"},
+            {"state": "Pending", "doc_status": 0, "allow_edit": "Compliance Officer"},
+            {"state": "Shipped", "doc_status": 0, "allow_edit": "Nile Export Owner"},
+            {"state": "Shipped", "doc_status": 0, "allow_edit": "Nile Export Admin"},
+            {"state": "Shipped", "doc_status": 0, "allow_edit": "Export Director"},
+            {"state": "Shipped", "doc_status": 0, "allow_edit": "Operations Manager"},
+            {"state": "Shipped", "doc_status": 0, "allow_edit": "Logistics Officer"},
+            {"state": "Delivered", "doc_status": 0, "allow_edit": "Nile Export Owner"},
+            {"state": "Delivered", "doc_status": 0, "allow_edit": "Nile Export Admin"},
+            {"state": "Delivered", "doc_status": 0, "allow_edit": "Export Director"},
+            {"state": "Delivered", "doc_status": 0, "allow_edit": "Logistics Officer"},
+            {"state": "Cancelled", "doc_status": 0, "allow_edit": "Nile Export Owner"},
+            {"state": "Cancelled", "doc_status": 0, "allow_edit": "Nile Export Admin"}
         ],
         "transitions": [
-            {"state": "Draft", "action": "Submit for Approval", "next_state": "Pending", "allowed": ["Nile Export Owner", "Nile Export Admin", "Export Director", "Operations Manager"]},
-            {"state": "Pending", "action": "Mark as Shipped", "next_state": "Shipped", "allowed": ["Nile Export Owner", "Nile Export Admin", "Export Director", "Operations Manager", "Logistics Officer"]},
-            {"state": "Shipped", "action": "Mark Delivered", "next_state": "Delivered", "allowed": ["Nile Export Owner", "Nile Export Admin", "Export Director", "Logistics Officer"]},
-            {"state": "Draft", "action": "Cancel", "next_state": "Cancelled", "allowed": ["Nile Export Owner", "Nile Export Admin"]},
-            {"state": "Pending", "action": "Cancel", "next_state": "Cancelled", "allowed": ["Nile Export Owner", "Nile Export Admin"]}
+            {"state": "Draft", "action": "Submit for Approval", "next_state": "Pending", "allowed": "Nile Export Owner"},
+            {"state": "Draft", "action": "Submit for Approval", "next_state": "Pending", "allowed": "Nile Export Admin"},
+            {"state": "Draft", "action": "Submit for Approval", "next_state": "Pending", "allowed": "Export Director"},
+            {"state": "Draft", "action": "Submit for Approval", "next_state": "Pending", "allowed": "Operations Manager"},
+            {"state": "Pending", "action": "Mark as Shipped", "next_state": "Shipped", "allowed": "Nile Export Owner"},
+            {"state": "Pending", "action": "Mark as Shipped", "next_state": "Shipped", "allowed": "Nile Export Admin"},
+            {"state": "Pending", "action": "Mark as Shipped", "next_state": "Shipped", "allowed": "Export Director"},
+            {"state": "Pending", "action": "Mark as Shipped", "next_state": "Shipped", "allowed": "Operations Manager"},
+            {"state": "Pending", "action": "Mark as Shipped", "next_state": "Shipped", "allowed": "Logistics Officer"},
+            {"state": "Shipped", "action": "Mark Delivered", "next_state": "Delivered", "allowed": "Nile Export Owner"},
+            {"state": "Shipped", "action": "Mark Delivered", "next_state": "Delivered", "allowed": "Nile Export Admin"},
+            {"state": "Shipped", "action": "Mark Delivered", "next_state": "Delivered", "allowed": "Export Director"},
+            {"state": "Shipped", "action": "Mark Delivered", "next_state": "Delivered", "allowed": "Logistics Officer"},
+            {"state": "Draft", "action": "Cancel", "next_state": "Cancelled", "allowed": "Nile Export Owner"},
+            {"state": "Draft", "action": "Cancel", "next_state": "Cancelled", "allowed": "Nile Export Admin"},
+            {"state": "Pending", "action": "Cancel", "next_state": "Cancelled", "allowed": "Nile Export Owner"},
+            {"state": "Pending", "action": "Cancel", "next_state": "Cancelled", "allowed": "Nile Export Admin"}
         ]
     },
     {
         "doctype": "Workflow",
-        "name": "Supplier Station Workflow",
+        "workflow_name": "Supplier Station",
         "document_type": "Supplier Station",
         "workflow_state_field": "status",
         "states": [
-            {"state": "Active", "doc_status": 1, "allow_edit": ["Nile Export Owner", "Nile Export Admin", "Operations Manager"]},
-            {"state": "Inactive", "doc_status": 0, "allow_edit": ["Nile Export Owner", "Nile Export Admin"]}
+            {"state": "Active", "doc_status": 0, "allow_edit": "Nile Export Owner"},
+            {"state": "Active", "doc_status": 0, "allow_edit": "Nile Export Admin"},
+            {"state": "Active", "doc_status": 0, "allow_edit": "Operations Manager"},
+            {"state": "Inactive", "doc_status": 0, "allow_edit": "Nile Export Owner"},
+            {"state": "Inactive", "doc_status": 0, "allow_edit": "Nile Export Admin"}
         ],
         "transitions": [
-            {"state": "Active", "action": "Deactivate", "next_state": "Inactive", "allowed": ["Nile Export Owner", "Nile Export Admin"]},
-            {"state": "Inactive", "action": "Activate", "next_state": "Active", "allowed": ["Nile Export Owner", "Nile Export Admin", "Operations Manager"]}
+            {"state": "Active", "action": "Deactivate", "next_state": "Inactive", "allowed": "Nile Export Owner"},
+            {"state": "Active", "action": "Deactivate", "next_state": "Inactive", "allowed": "Nile Export Admin"},
+            {"state": "Inactive", "action": "Activate", "next_state": "Active", "allowed": "Nile Export Owner"},
+            {"state": "Inactive", "action": "Activate", "next_state": "Active", "allowed": "Nile Export Admin"},
+            {"state": "Inactive", "action": "Activate", "next_state": "Active", "allowed": "Operations Manager"}
         ]
     },
     {
         "doctype": "Workflow",
-        "name": "Packing Station Workflow",
+        "workflow_name": "Packing Station",
         "document_type": "Packing Station",
         "workflow_state_field": "status",
         "states": [
-            {"state": "Active", "doc_status": 1, "allow_edit": ["Nile Export Owner", "Nile Export Admin", "Operations Manager"]},
-            {"state": "Inactive", "doc_status": 0, "allow_edit": ["Nile Export Owner", "Nile Export Admin"]}
+            {"state": "Active", "doc_status": 0, "allow_edit": "Nile Export Owner"},
+            {"state": "Active", "doc_status": 0, "allow_edit": "Nile Export Admin"},
+            {"state": "Active", "doc_status": 0, "allow_edit": "Operations Manager"},
+            {"state": "Inactive", "doc_status": 0, "allow_edit": "Nile Export Owner"},
+            {"state": "Inactive", "doc_status": 0, "allow_edit": "Nile Export Admin"}
         ],
         "transitions": [
-            {"state": "Active", "action": "Deactivate", "next_state": "Inactive", "allowed": ["Nile Export Owner", "Nile Export Admin"]},
-            {"state": "Inactive", "action": "Activate", "next_state": "Active", "allowed": ["Nile Export Owner", "Nile Export Admin", "Operations Manager"]}
+            {"state": "Active", "action": "Deactivate", "next_state": "Inactive", "allowed": "Nile Export Owner"},
+            {"state": "Active", "action": "Deactivate", "next_state": "Inactive", "allowed": "Nile Export Admin"},
+            {"state": "Inactive", "action": "Activate", "next_state": "Active", "allowed": "Nile Export Owner"},
+            {"state": "Inactive", "action": "Activate", "next_state": "Active", "allowed": "Nile Export Admin"},
+            {"state": "Inactive", "action": "Activate", "next_state": "Active", "allowed": "Operations Manager"}
         ]
     }
 ]

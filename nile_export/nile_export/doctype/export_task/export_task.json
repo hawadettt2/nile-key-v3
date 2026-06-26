@@ -1,8 +1,7 @@
 {
     "doctype": "DocType",
     "name": "Export Task",
-    "module": "Nile Export",
-    "custom": 1,
+    "module": "nile_export",
     "fields": [
         {"label": "Task ID", "fieldname": "task_id", "fieldtype": "Data", "reqd": 1},
         {"label": "Company", "fieldname": "company", "fieldtype": "Link", "options": "Company"},
