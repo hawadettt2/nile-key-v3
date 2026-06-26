@@ -1,143 +1,71 @@
-# Nile Export - Final Execution Plan
+# Nile Export v3 - Implementation Plan
 
-## Executive Summary
-- **Project:** Nile Key v3 - Digital Export Gateway
-- **Status:** Deep Freeze removed, ready for implementation
-- **Source:** All code in GitHub repository
+## Goal
+Deploy Nile Key v3 Digital Export Gateway with all 19 DocTypes, RBAC, workflows, and APIs operational.
 
----
+## Current State
+- **Deep Freeze:** Removed
+- **Source Code:** Complete (19 DocTypes, 13 roles, 3 workflows, 7 APIs)
+- **Environment:** Not started (Docker not running)
 
-## 1. VERIFIED COMPLETED WORK
+## Prerequisites
+- Docker Desktop running on Windows
+- Project cloned at `F:\nilekey\nile-key-project\nile-key-v3`
 
-| Component | Status | Evidence |
-|-----------|--------|----------|
-| 19 DocTypes JSON | ✅ Fixed | `"custom": 1` removed, module = "nile_export" |
-| RBAC Roles (13) | ✅ Ready | `nile_export/fixtures/role.json` |
-| Workflows (3) | ✅ Ready | `nile_export/fixtures/workflow.json` |
-| API Endpoints (7) | ✅ Ready | `nile_export/api/*.py` |
-| Unit Tests | ✅ Ready | `nile_export/tests/test_doctypes.py` |
-| Portal Skeleton | ✅ Ready | `portal/src/app/` |
-| CI/CD | ✅ Ready | `.github/workflows/ci.yml` |
+## Execution Steps
 
----
-
-## 2. CRITICAL ISSUES TO RESOLVE
-
-### Issue 2.1: Module Path Structure
-- **Problem:** Duplicate nesting causes `ModuleNotFoundError`
-- **Current:** `/apps/nile_export/nile_export/nile_export/doctype/`
-- **Expected:** `/apps/nile_export/nile_export/doctype/`
-- **Fix:** Reinstall app with correct path
-
-### Issue 2.2: Python Package Installation
-- **Problem:** `nile_export` module not found
-- **Solution:** `pip install -e apps/nile_export` inside container
-
----
-
-## 3. EXECUTION STEPS
-
-### Phase 1: Environment Setup
+### Step 1: Start Environment
 ```powershell
-# Check Docker
-docker version
-
-# Start all services
+cd F:\nilekey\nile-key-project\nile-key-v3
 docker-compose -f pwd.yml up -d
-
-# Monitor startup
-docker-compose -f pwd.yml logs -f
 ```
+**Wait for:** All 7 containers show "Up" status
 
-### Phase 2: App Installation
+### Step 2: Install App
 ```bash
-# Enter backend container
 docker exec -it backend bash
-
-# Install package
 cd /home/frappe/frappe-bench
 pip install -e apps/nile_export
-
-# Install app in site
 bench --site frontend install-app nile_export
-
-# Export fixtures
 bench --site frontend export-fixtures
-
-# Run migrations
 bench --site frontend migrate
+exit
 ```
 
-### Phase 3: Verification
+### Step 3: Verify
 ```bash
-# List DocTypes
-bench --site frontend list-doctypes | grep Export
+# Check DocTypes
+docker exec backend bench --site frontend list-doctypes | grep Export
 
 # Run tests
-bench --site frontend run-tests --app nile_export
+docker exec backend bench --site frontend run-tests --app nile_export
 
-# Check web access
+# Check web
 curl http://localhost:8080
 ```
 
-### Phase 4: Backup & Git
+### Step 4: Backup & Push
 ```bash
-# Database backup
-bench --site frontend backup --with-files
-
-# Copy outside container
-docker cp backend:/home/frappe/.local/share/benches/benches/0/private/* ./backups/
-
-# Git commit/push
 git add .
 git commit -m "chore: complete environment setup"
 git push origin master
+docker exec backend bench backup --with-files
 ```
 
----
+## Success Criteria
+- [ ] 7 Docker containers running
+- [ ] nile_export in `bench list-apps`
+- [ ] 19 DocTypes listed
+- [ ] Tests pass (0 failures)
+- [ ] http://localhost:8080 accessible
 
-## 4. ACCEPTANCE CRITERIA
+## Risks
+- Docker Desktop not starting (see WSL2 alternative in plan)
+- Port conflicts (8080, 3306, 6379)
+- Permission issues in container
 
-- [ ] Docker: 7 containers "Up"
-- [ ] `bench list-apps` includes "nile_export"
-- [ ] `bench list-doctypes` shows 19 Export types
-- [ ] `bench run-tests` passes (0 failures)
-- [ ] http://localhost:8080 returns 200
-- [ ] Git pushed to remote
-
----
-
-## 5. DAILY WORKFLOW
-
+## Rollback
 ```bash
-# Start
-git pull origin master
-docker-compose -f pwd.yml up -d
-
-# End
-git add .
-git commit -m "type: message"
-git push origin master
-bench backup --with-files
+docker-compose -f pwd.yml down -v
+# Start over from Step 1
 ```
-
----
-
-## 6. ROLLBACK PLAN
-
-If installation fails:
-1. `docker-compose -f pwd.yml down -v`
-2. Remove volumes manually
-3. Restart from Phase 1
-
----
-
-## 7. SUCCESS INDICATORS
-
-| Check | Command | Expected |
-|-------|---------|----------|
-| Containers | `docker-compose ps` | 7 "Up" |
-| Apps | `bench list-apps` | nile_export present |
-| DocTypes | `bench list-doctypes` | 19 types |
-| Tests | `bench run-tests` | 0 failed |
-| Web | `curl localhost:8080` | 200 OK |
